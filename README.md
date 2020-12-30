@@ -26,3 +26,22 @@ When designing this website, I followed the 5 levels of development, a well know
 - As a potential customer, I want to check availability of tours, so that I can identify if the options are feasible for me.
 - As a potential customer, I want to book a tour, so that I can guarantee my place on the tour.
 - As a potential customer, I want to contact the company, so that I can provide feedback or ask any unanswered questions.
+
+### Scope Plane
+The scope plane ensures that the website sections align to the objects and that these don’t grow in number throughout the project.
+- Necessary sections which align to the project objectives and user stories mentioned in the Structure plane are as below. 
+- For this project we will include all phase 1 sections and omit phase 2 sections until a later sprint due to resource capacity. 
+
+#### Phase 1
+- Home
+-- Map
+-- Testimonials
+- About
+- Contact
+- Book a tour
+- Events
+
+#### Phase 2
+- History
+- Gallery
+
