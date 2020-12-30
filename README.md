@@ -33,15 +33,58 @@ The scope plane ensures that the website sections align to the objects and that 
 - For this project we will include all phase 1 sections and omit phase 2 sections until a later sprint due to resource capacity. 
 
 #### Phase 1
+The frist phase of the website will consist of 5 pages. The map and testimonial sections will be located on the Home page.
 - Home
--- Map
--- Testimonials
+  - Map
+  - Testimonials
 - About
 - Contact
 - Book a tour
 - Events
 
 #### Phase 2
+The second phase will be added at a later stage due to time and content capacity. As the compnay is yet to give any tours, there is a lack of content for the Gallery section.
 - History
 - Gallery
 
+### Structure Plane
+
+### Skeleton Plane
+Once the sections and layout has been identified as in the previous planes we can get started with the Skeleton Plane.
+The Skeleton Planes outlines the arrangment of each section on the website and the best way to design these are by creating wireframes.
+I initially drew these wireframes before creating using Balsamiq software.
+
+#### Home page
+##### Desktop
+<img src="assets/wireframes/MS2_Desktop_Home.png">
+
+##### Mobile
+<img src="assets/wireframes/MS2_Mobile_Home.png">
+
+#### About page
+##### Desktop
+<img src="assets/wireframes/MS2_Desktop_About.png">
+
+##### Mobile
+<img src="assets/wireframes/MS2_Mobile_About.png">
+
+#### Contact page
+##### Desktop
+<img src="assets/wireframes/MS2_Desktop_Contact.png">
+
+##### Mobile
+<img src="assets/wireframes/MS2_Mobile_Contact.png">
+
+#### Book (a tour) page
+##### Desktop
+<img src="assets/wireframes/MS2_Desktop_Book.png">
+
+##### Mobile
+<img src="assets/wireframes/MS2_Mobile_Book.png">
+
+#### Events page
+##### Desktop
+<img src="assets/wireframes/MS2_Desktop_Events.png">
+
+##### Mobile
+<img src="assets/wireframes/MS2_Mobile_Events.png">
