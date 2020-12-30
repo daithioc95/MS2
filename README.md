@@ -88,3 +88,17 @@ I initially drew these wireframes before creating using Balsamiq software.
 
 ##### Mobile
 <img src="assets/wireframes/MS2_Mobile_Events.png">
+
+### Surface Plane
+The surface plane is the least conceptual plane and consists of the actual content and features on the website.
+
+#### Features
+Please see below list of features present on the website
+
+- Navbar: A responsive Navbar will feature on the website so the user can easily navigate to other pages.
+- Images: As this is a travel website, this website will be image heavy as a selling point to the visitor for what Ireland has to offer.
+- Carousel: To ensure an engaging website which can portray to the visitor the beauty of Ireland, an image Carousel will be used for aestetics and to increase the capacity for images.
+- Form: To ensure the visiors can contact the company with any further queries a form will be included.
+- Interactive Map: A Google Maps API will be used to provide the visior with infomation based on location. 
+- Testimonial boxes: Testimonial boxes of previous customer will be included so the visitor can get some further infomation from previous customers.
+- Calendar Appointment Booking System: If the customer wants to book a tour they can check availability and book a place using the Calendar Appointment Booking System. 
