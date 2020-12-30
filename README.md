@@ -9,3 +9,20 @@ When designing this website, I followed the 5 levels of development, a well know
 - Structure Plane
 - Skeleton Plane
 - Surface Plane
+
+### Strategy Plane
+
+#### Project Objectives
+- Showcase the developer’s frontend development skills.
+- Provide travel information on Ireland to the audience.
+- Provide information specific to the companies tours for the visitor
+- Regarding tours, provide the audience with the ability to check availability and book a tour.
+- Allow the audience to interact with the website to collect information in an aesthetically pleasing manner.
+- Provide a means of contact for the visitor should they want to reach out to the company directly.
+
+#### User Stories
+- As a potential customer, I want to find travel information on Ireland, so that I can identify if it is a suitable holiday destination for me.
+- As a potential customer, I want to find information on the company’s tours, so that I can decide if the tours are suitable to me.
+- As a potential customer, I want to check availability of tours, so that I can identify if the options are feasible for me.
+- As a potential customer, I want to book a tour, so that I can guarantee my place on the tour.
+- As a potential customer, I want to contact the company, so that I can provide feedback or ask any unanswered questions.
