@@ -1,9 +1,9 @@
 # Interactive Front-End Development Project
  
-This website is a travel website for anyone interested in visiting or learning more about the island of Ireland. In addition to providing an informative service, this website will also provide the user with the ability to book tours withing Ireland. The website contains frontend development features to provide information in an interactive and aesthetically pleasing manner. 
+This website is a travel website for anyone interested in visiting or learning more about the island of Ireland. In addition to providing an informative service, this website will also provide the user with the ability to book tours within Ireland. The website contains frontend development features to provide information in an interactive and aesthetically pleasing manner. 
 
 ## UX
-When designing this website, I followed the 5 levels of development, a well know web design process mentioned in Jesse James Garrett's book, The Elements of User Experience. The 5 elements are as followed. The planning of each of these planes are to follow the same order as below with each plane sacrificing to following. This ensures that the main objectives for the website identified in the Strategy plane aligns all the way through to the Surface Plane which identifies the actual features on the website.
+When designing this website, I followed the 5 levels of development, a well know web design process mentioned in Jesse James Garrett's book, The Elements of User Experience. The planning of each of these planes are to follow the same order as below with each plane aligning to the previous plane’s requirements. This ensures that the main objectives for the website identified in the Strategy plane aligns all the way through to the Surface Plane which identifies the actual features on the website.
 - Strategy Plane
 - Scope Plane
 - Structure Plane
@@ -33,7 +33,7 @@ The scope plane ensures that the website sections align to the objects and that 
 - For this project we will include all phase 1 sections and omit phase 2 sections until a later sprint due to resource capacity. 
 
 #### Phase 1
-The frist phase of the website will consist of 5 pages. The map and testimonial sections will be located on the Home page.
+The first phase of the website will consist of 5 pages. The map and testimonial sections will be located on the Home page.
 - Home
   - Map
   - Testimonials
@@ -43,7 +43,7 @@ The frist phase of the website will consist of 5 pages. The map and testimonial 
 - Events
 
 #### Phase 2
-The second phase will be added at a later stage due to time and content capacity. As the compnay is yet to give any tours, there is a lack of content for the Gallery section.
+The second phase will be added at a later stage due to time and content capacity. As the company is yet to give any tours, there is a lack of content for the Gallery section.
 - History
 - Gallery
 
@@ -51,7 +51,7 @@ The second phase will be added at a later stage due to time and content capacity
 
 ### Skeleton Plane
 Once the sections and layout has been identified as in the previous planes we can get started with the Skeleton Plane.
-The Skeleton Planes outlines the arrangment of each section on the website and the best way to design these are by creating wireframes.
+The Skeleton Planes outlines the arrangement of each section on the website and the best way to design these are by creating wireframes.
 I initially drew these wireframes before creating using Balsamiq software.
 
 #### Home page
@@ -97,8 +97,8 @@ Please see below list of features present on the website
 
 - Navbar: A responsive Navbar will feature on the website so the user can easily navigate to other pages.
 - Images: As this is a travel website, this website will be image heavy as a selling point to the visitor for what Ireland has to offer.
-- Carousel: To ensure an engaging website which can portray to the visitor the beauty of Ireland, an image Carousel will be used for aestetics and to increase the capacity for images.
-- Form: To ensure the visiors can contact the company with any further queries a form will be included.
-- Interactive Map: A Google Maps API will be used to provide the visior with infomation based on location. 
-- Testimonial boxes: Testimonial boxes of previous customer will be included so the visitor can get some further infomation from previous customers.
-- Calendar Appointment Booking System: If the customer wants to book a tour they can check availability and book a place using the Calendar Appointment Booking System. 
+- Carousel: To ensure an engaging website which can portray to the visitor the beauty of Ireland, an image Carousel will be used for aesthetics and to increase the capacity for images.
+- Form: To ensure the visitors can contact the company with any further queries a form will be included.
+- Interactive Map: A Google Maps API will be used to provide the visitor with information based on location. 
+- Testimonial boxes: Testimonial boxes of previous customer will be included so the visitor can get some further information from previous customers.
+- Calendar Appointment Booking System: If the customer wants to book a tour, they can check availability and book a place using the Calendar Appointment Booking System. 
