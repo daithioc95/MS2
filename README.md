@@ -48,6 +48,10 @@ The second phase will be added at a later stage due to time and content capacity
 - Gallery
 
 ### Structure Plane
+- Navbar: The Navbar is a green colour to ensure the green brand image of Ireland is communicated to the visitor.
+- Header: The Navbar colour is used as the header font color throughout.
+- Backgroud: The background will consist of background images with a level of transparency applied.
+- FontAwesome: Font Awesome Icons were used throughout the website to provide more information links.
 
 ### Skeleton Plane
 Once the sections and layout has been identified as in the previous planes we can get started with the Skeleton Plane.
