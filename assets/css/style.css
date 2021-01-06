@@ -17,3 +17,17 @@ a#brand, a.nav-link{
     text-align: center;
 }
 
+#carousel-item{
+    width: 100%;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    text-align: center;
+}
