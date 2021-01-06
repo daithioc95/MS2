@@ -1,6 +1,19 @@
-nav#header-menu{
-    background-color: #8EE4AF;
+#header-menu{
+    background-color: #8EE4AF !important;
 }
 a#brand, a.nav-link{
     color: white;
 }
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: rgba(0, 0, 0, .5)
+}
+
+.nav-item {
+    text-align: center;
+}
+
