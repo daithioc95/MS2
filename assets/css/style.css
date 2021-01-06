@@ -1,3 +1,5 @@
+/* Navbar */
+
 #header-menu{
     background-color: #8EE4AF !important;
 }
@@ -17,11 +19,12 @@ a#brand, a.nav-link{
     text-align: center;
 }
 
+/* Carousel */
+
 #carousel-item{
     width: 100%;
 }
 
-/* Caption text */
 .text {
     color: #f2f2f2;
     font-size: 50px;
@@ -30,4 +33,45 @@ a#brand, a.nav-link{
     bottom: 40%;
     width: 100%;
     text-align: center;
+}
+
+/*------------ Footer------------ */
+
+#footer-social {
+    text-align: center;
+}
+
+.list-inline.social-links {
+    margin-bottom: 0;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 40px;
+    height: 40px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 15px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    margin: 20px 20px 15px 20px;
+}
+
+.social-links li a i:hover {
+    background: #8EE4AF;
+}
+
+footer {
+    background-color: white;
+    padding: 25px;
+    margin-top: 30px;
 }
