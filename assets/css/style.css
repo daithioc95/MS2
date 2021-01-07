@@ -76,4 +76,24 @@ footer {
     margin-top: 30px;
 }
 
-div#map {min-height: 360px;}
+/* Google Maps API */
+
+div#map {
+    min-height: 360px;
+}
+
+div#filter{
+    min-height: 360px;
+    border: 5px solid black;
+}
+
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 100%;
+    float: left;
+    padding: 0px;
+}  
