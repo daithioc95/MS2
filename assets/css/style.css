@@ -75,3 +75,5 @@ footer {
     padding: 25px;
     margin-top: 30px;
 }
+
+div#map {min-height: 360px;}
