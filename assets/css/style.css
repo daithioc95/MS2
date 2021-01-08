@@ -58,7 +58,7 @@ a#brand, a.nav-link{
     line-height: 15px;
     text-align: center;
     color: #fafafa;
-    background: #8f8f8f;
+    background: #75A2BD;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -67,7 +67,7 @@ a#brand, a.nav-link{
 }
 
 .social-links li a i:hover {
-    background: #8EE4AF;
+    background: #52C50D;
 }
 
 footer {
@@ -203,7 +203,7 @@ div#filter{
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: #111;
+        background-color: #75A2BD;
         /*same background color of navbar*/
         background-position: center top;
     }
@@ -362,19 +362,19 @@ div#filter{
 .affix {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #111;
+    background-color: #75A2BD;
     height: 65px;
     line-height: 65px;
 }
 
 @media screen and (max-width:991px) {
     .navbar{
-        background-color: #111;
+        background-color: #75A2BD;
         height: 65px;
         line-height: 65px;
     }
     #navbarNav{
-        background-color: #111;
+        background-color: #75A2BD;
     }
     .nav{
         padding-top: 0;
