@@ -12,7 +12,7 @@ a#brand, a.nav-link{
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
-    color: #00E676;
+    color: #52C50D;
 }
 
 .nav-item {
@@ -155,7 +155,7 @@ div#filter{
 }
 
 .nav div.main_list ul li a:hover {
-    color: #00E676;
+    color: #52C50D;
 }
 
 /* Home section */
@@ -371,8 +371,13 @@ div#filter{
     .navbar{
         background-color: #111;
         height: 65px;
+        line-height: 65px;
     }
     #navbarNav{
         background-color: #111;
+    }
+    .nav{
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
