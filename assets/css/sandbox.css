@@ -1,106 +1,19 @@
-/* Navbar */
-
-#header-menu{
-    /* background-color: #ffffff00 !important; */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
 }
-a#brand, a.nav-link{
-    color: white;
-}
-.navbar-light .navbar-nav .nav-link,
-.navbar-light .navbar-nav .nav-link {
-    color: white;
-}
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
-    color: #00E676;
-}
-
-.nav-item {
-    text-align: center;
-}
-
-/* Carousel */
-
-#carousel-item{
-    width: 100%;
-}
-
-.text {
-    color: #f2f2f2;
-    font-size: 50px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 40%;
-    width: 100%;
-    text-align: center;
-}
-
-/*------------ Footer------------ */
-
-#footer-social {
-    text-align: center;
-}
-
-.list-inline.social-links {
-    margin-bottom: 0;
-}
-
-.social-links {
-    padding-bottom: 15px;
-}
-
-.social-links li a i {
-    width: 40px;
-    height: 40px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 20px;
-    line-height: 15px;
-    text-align: center;
-    color: #fafafa;
-    background: #8f8f8f;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-    margin: 20px 20px 15px 20px;
-}
-
-.social-links li a i:hover {
-    background: #8EE4AF;
-}
-
-footer {
-    background-color: white;
-    padding: 25px;
-    margin-top: 30px;
-}
-
-/* Google Maps API */
-
-div#map {
-    min-height: 360px;
-}
-
-div#filter{
-    min-height: 360px;
-    border: 5px solid black;
-}
-
-.float-container {
-    border: 3px solid #fff;
-    padding: 20px;
-}
-
-.float-child {
-    width: 100%;
-    float: left;
-    padding: 0px;
-}  
+/*-- Inspiration taken from abdo steif -->
+/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
 
 /* Navbar section */
 
-.nav {
+.snav {
     width: 100%;
     height: 65px;
     position: fixed;
@@ -108,29 +21,29 @@ div#filter{
     text-align: center;
 }
 
-.nav div.logo {
+.snav div.logo {
     float: left;
     width: auto;
     height: auto;
     padding-left: 3rem;
 }
 
-.nav div.logo a {
+.snav div.logo a {
     text-decoration: none;
     color: red;
     font-size: 2.5rem;
 }
 
-.nav div.logo a:hover {
-    color: #52C50D;
+.snav div.logo a:hover {
+    color: #00E676;
 }
 
-.nav div.main_list {
+.snav div.smain_list {
     height: 65px;
     float: right;
 }
 
-.nav div.main_list ul {
+.snav div.smain_list ul {
     width: 100%;
     height: 65px;
     display: flex;
@@ -139,31 +52,40 @@ div#filter{
     padding: 0;
 }
 
-.nav div.main_list ul li {
+.snav div.smain_list ul li {
     width: auto;
     height: 65px;
     padding: 0;
     padding-right: 3rem;
 }
 
-.nav div.main_list ul li a {
+.snav div.smain_list ul li a {
     text-decoration: none;
     color: red;
     line-height: 65px;
     font-size: 2.4rem;
 }
 
-.nav div.main_list ul li a:hover {
+.snav div.smain_list ul li a:hover {
     color: #00E676;
 }
 
+
 /* Home section */
+
+/* .home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
+    background-position: center top;
+	background-size:cover;
+} */
 
 .navTrigger {
     display: none;
 }
 
-.nav {
+.snav {
     padding-top: 20px;
     padding-bottom: 20px;
     -webkit-transition: all 0.4s ease;
@@ -183,19 +105,19 @@ div#filter{
     .navTrigger {
         display: block;
     }
-    .nav div.logo {
+    .snav div.logo {
         margin-left: 15px;
     }
-    .nav div.main_list {
+    .snav div.smain_list {
         width: 100%;
         height: 0;
         overflow: hidden;
     }
-    .nav div.show_list {
+    .snav div.show_list {
         height: auto;
         display: none;
     }
-    .nav div.main_list ul {
+    .snav div.smain_list ul {
         flex-direction: column;
         width: 100%;
         height: 100vh;
@@ -203,20 +125,20 @@ div#filter{
         left: 0;
         bottom: 0;
         background-color: #111;
-        /*same background color of navbar*/
+        /*same background color of snavbar*/
         background-position: center top;
     }
-    .nav div.main_list ul li {
+    .snav div.smain_list ul li {
         width: 100%;
         text-align: right;
     }
-    .nav div.main_list ul li a {
+    .snav div.smain_list ul li a {
         text-align: center;
         width: 100%;
         font-size: 3rem;
         padding: 20px;
     }
-    .nav div.media_button {
+    .snav div.media_button {
         display: block;
     }
 }
@@ -225,6 +147,62 @@ div#filter{
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
 
 @-webkit-keyframes inM {
     50% {
@@ -363,4 +341,28 @@ div#filter{
     background-color: #111;
 }
 
+
+
+
+
+
+.myH2 {
+	text-align:center;
+	font-size: 4rem;
+}
+.myP {
+	text-align: justify;
+	padding-left:15%;
+	padding-right:15%;
+	font-size: 20px;
+}
+@media all and (max-width:700px){
+	.myP {
+		padding:2%;
+	}
+}
+
+div#welcome-image-carosel{
+    z-index: -9;
+}
 

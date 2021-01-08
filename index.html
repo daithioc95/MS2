@@ -13,7 +13,7 @@
     <body>
         <!-- Header section, includng navbar (Bootstrap) -->
         <header>
-            <nav id="header-menu" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <nav id="header-menu" class="nav navbar navbar-expand-lg navbar-light fixed-top">
                 <a id="brand" class="navbar-brand" href="index.html">Gulliver's Travels</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,10 +27,10 @@
                             <a class="nav-link" href="#about-heading">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#experience-heading">Experience</a>
+                            <a class="nav-link" href="#experience-heading">Tours</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio-heading">Portfolio</a>
+                            <a class="nav-link" href="#portfolio-heading">Events</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact-heading">Contact</a>
@@ -139,6 +139,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script type="text/javascript" src="assets/js/carousel.js"></script>
-        
+        <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
     </body>
 </html>
