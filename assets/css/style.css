@@ -1,3 +1,8 @@
+/* Font */
+h1, h2, h3{
+    color: #75A2BD;
+}
+
 /* Navbar */
 
 #header-menu{
@@ -399,3 +404,7 @@ div#filter{
 .carousel-image{
     width: 100% !important;
 }}
+
+.carousel-image{
+    margin-bottom: 10px;
+}
