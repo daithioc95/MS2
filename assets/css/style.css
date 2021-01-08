@@ -390,6 +390,9 @@ div#filter{
         height: 50px;
         line-height: 50px;
     }
+    a#brand, a.nav-link {
+    text-shadow: none;
+    }
     #navbarNav{
         background-color: #75A2BD;
     }
