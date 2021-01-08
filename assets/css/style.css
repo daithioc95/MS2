@@ -379,14 +379,23 @@ div#filter{
         background-color: #75A2BD;
     }
     .nav{
-        padding-top: 0;
+        padding-top: 0; 
         padding-bottom: 0;
     }
 }
 
-@media screen and (max-width: 570px) {
-    #carousel-item{
-        width: auto;
-     background-size: cover;
-  background-position: center;}
+@media screen and (max-width:570px) {
+    .carousel-image{
+        width: auto !important;
+        height: calc(100vh - 50px);
+     /* background-size: cover !important;  */
+  background-position: center !important;}
+  .text{
+    bottom: 0px;
+  }
 }
+
+@media screen and (min-width:570px) {
+.carousel-image{
+    width: 100% !important;
+}}
