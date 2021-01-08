@@ -5,6 +5,7 @@
 }
 a#brand, a.nav-link{
     color: white;
+    padding: 0;
 }
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-nav .nav-link {
@@ -24,6 +25,7 @@ a#brand, a.nav-link{
 #carousel-item{
     width: 100%;
 }
+
 
 .text {
     color: #f2f2f2;
@@ -154,7 +156,7 @@ div#filter{
     font-size: 2.4rem;
 }
 
-.nav div.main_list ul li a:hover {
+.nav div.main_list ul li a:hover, a#brand:hover{
     color: #52C50D;
 }
 
@@ -380,4 +382,11 @@ div#filter{
         padding-top: 0;
         padding-bottom: 0;
     }
+}
+
+@media screen and (max-width: 570px) {
+    #carousel-item{
+        width: auto;
+     background-size: cover;
+  background-position: center;}
 }
