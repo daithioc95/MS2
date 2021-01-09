@@ -91,7 +91,7 @@ a#brand, a.nav-link{
 footer {
     background-color: white;
     padding: 25px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 
 /* Google Maps API */
