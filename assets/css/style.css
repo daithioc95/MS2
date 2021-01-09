@@ -1,12 +1,17 @@
 /* Font */
 h1, h2, h3{
     color: #75A2BD;
+    text-align: center;
 }
 h2{font-size: 32px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+p{
+    padding-left: 10%;
+    padding-right: 10%;
+}
 /* Navbar */
 
 #header-menu{
@@ -518,4 +523,5 @@ div#filter{
 .welcome-img {
     width: 100%;
     height: auto;
+    margin-bottom: 10px;
 }
