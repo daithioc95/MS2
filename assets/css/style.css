@@ -525,3 +525,13 @@ div#filter{
     height: auto;
     margin-bottom: 10px;
 }
+
+/* Contact */
+.btn-info{
+    background-color: #75A2BD;
+    border-color: #75A2BD;
+}
+.btn-info:hover{
+    background-color: #5C89A4;
+    border-color: #5C89A4;
+}
