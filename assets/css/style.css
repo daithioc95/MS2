@@ -535,3 +535,8 @@ div#filter{
     background-color: #5C89A4;
     border-color: #5C89A4;
 }
+
+/* Map Filter */
+.filter{
+    padding: 20px;
+}
