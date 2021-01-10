@@ -10,16 +10,17 @@ function initMap() {
         var labels = "ABCBEFGHIJKLMNOPQRSTUVWXYZ";
 
             var locations = [{
-                lat: 40.785091,
-                lng: -73.968285
+                lat: 52.9717877,
+                lng: -9.4291244
             }, {
-                lat: 41.084045,
-                lng: -73.874256
+                lat: 53.34193275,
+                lng: -6.28672974298643
             }, {
-                lat: 40.754932,
-                lng: -73.984016
+                lat: 55.24082145,
+                lng: -6.51163864
             }];
 
+            // put form action event here depending on checkbox
             var markers = locations.map(function(location, i) {
                 return new google.maps.Marker({
                     position: location,
@@ -27,6 +28,7 @@ function initMap() {
                 });
             });
 
+            // make one for each category/color
             var markerCluster = new MarkerClusterer(map, markers, {
                 imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
             });
