@@ -97,12 +97,14 @@
                                 </div>
                                 <div class="filter-checkboxes row">
                                     <div class="col-12">
-                                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                                        <label for="vehicle1"> Tourist Attractions</label><br>
-                                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                                        <label for="vehicle2"> Restaurants/Bars</label><br>
-                                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                                        <label for="vehicle3"> Events</label><br>
+                                        <form action="">
+                                            <input type="checkbox" id="attractionRadio" name="attractionRadio" value="Bike">
+                                            <label for="vehicle1"> Tourist Attractions</label><br>
+                                            <input type="checkbox" id="restaurantsRadio" name="restaurantsRadio" value="Car">
+                                            <label for="vehicle2"> Restaurants/Bars</label><br>
+                                            <input type="checkbox" id="eventsRadio" name="eventsRadio" value="Boat">
+                                            <label for="vehicle3"> Events</label><br>
+                                        </form>
                                     </div>
                                 </div>
                            </div>
@@ -185,8 +187,9 @@
         </footer>
 
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADq66twskCpg_SQwgjmY4o9SgnKue0wLE&callback=initMap"></script>
     <script src="assets/js/maps.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADq66twskCpg_SQwgjmY4o9SgnKue0wLE&callback=initMap"></script>
+    
 
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -197,7 +200,6 @@
             if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');
                 $('a#brand, a.nav-link').addClass('affix-shadow');
-                console.log("OK");
             } else {
                 $('.nav').removeClass('affix');
                 $('a#brand, a.nav-link').removeClass('affix-shadow');
