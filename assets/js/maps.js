@@ -62,6 +62,8 @@ function addMarker(prop) {
       
       marker.addListener('click', function() {
       information.open(map, marker);
+      map.setZoom(8);
+      map.setCenter(marker.getPosition());
       });
    }
 }
