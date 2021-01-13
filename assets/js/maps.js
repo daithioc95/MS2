@@ -83,16 +83,40 @@ function initMap() {
    }
 var map = new google.maps.Map(document.getElementById('map'), options);
 
-//  autocomplete.addListener('place_changed', onPlaceChanged); 
+
 
 document.querySelector("input[name=attractionRadio]").addEventListener('change', function() {
   if (this.checked) {
-    onPlaceChanged();
-  } 
+        console.log("Checkbox is checked..")
+        dropAttractions();
+    } 
+    else {
+        marker.setMap(null);
+        console.log("Checkbox is not checked..");
+    }
 });
-//  document.querySelector('attractionRadio').addEventListener("CheckboxStateChange", onPlaceChanged); 
- document.getElementById('restaurantsRadio').addEventListener("CheckboxStateChange", onPlaceChanged); 
- document.getElementById('eventsRadio').addEventListener("CheckboxStateChange", onPlaceChanged);
+
+document.querySelector("input[name=restaurantsRadio]").addEventListener('change', function() {
+  if (this.checked) {
+        console.log("Checkbox is checked..")
+        dropRestaurants();
+    } 
+    else {
+        setMap(null);
+        console.log("Checkbox is not checked..");
+    }
+});
+
+document.querySelector("input[name=eventsRadio]").addEventListener('change', function() {
+  if (this.checked) {
+        console.log("Checkbox is checked..")
+        dropEvents();
+    } 
+    else {
+        setMap(null);
+        console.log("Checkbox is not checked..");
+    }
+});
 
 
 var attractions = [
@@ -101,71 +125,55 @@ var attractions = [
     [55.24082145, -6.51163864, '<h1>3</h1>']
 ];
 
-var restaurants = [{
-    lat: 53.3454622 ,
-    lng: -6.26411,
-    content: '<h1>1</h1>'
-}, {
-    lat: 53.335436,
-    lng: -6.26351,
-    content: '<h1>2</h1>'
-}, {
-    lat: 53.33815205,
-    lng: -6.25418,
-    content: '<h1>3</h1>'
-}];
+var restaurants = [
+    [53.3454622, -6.26411, '<h1>1</h1>'], 
+    [53.335436, -6.26351, '<h1>2</h1>'], 
+    [53.33815205, -6.25418, '<h1>3</h1>']
+];
 
 
-var events = [{
-    lat: 53.69469735,
-    lng: -6.47555 ,
-    content: '<h1>1</h1>'
-}, {
-    lat: 53.3528582 ,
-    lng: -6.2645,
-    content: '<h1>2</h1>'
-}, {
-    lat: 52.33819075 ,
-    lng: -6.46211 ,
-    content: '<h1>3</h1>'
-}];
+var events = [
+    [53.69469735, -6.47555 , '<h1>1</h1>'],
+    [53.3528582, -6.2645, '<h1>2</h1>'], 
+    [52.33819075, -6.46211, '<h1>3</h1>']
+];
 
-function onPlaceChanged() {
-    document.querySelector("input[name=attractionRadio]").addEventListener('change', function() {
-        if (this.checked) {
-        console.log("Checkbox is checked..")
-        dropAttractions();
-        } 
-        else {
-            console.log("Checkbox is not checked..");
-        }
-});
-//      else if ($("#restaurantsRadio").is(':checked')) {
-//         dropRestaurants();
-// }
-//      else if ($("#eventsRadio").is(':checked')) {
-//         dropEvents();
-//      }
-}
+
 var marker, i;
+const attractionIcon = "http://maps.google.com/mapfiles/ms/icons/red.png";
+const restaurantIcon = "http://maps.google.com/mapfiles/ms/icons/green.png";
+const eventIcon = "http://maps.google.com/mapfiles/ms/icons/blue.png";
 
-function dropAttractions(){
-    for (i = 0; i < attractions.length; i++) {
-    marker = new google.maps.Marker({
-      position: new google.maps.LatLng(attractions[i][0], attractions[i][1]),
-      map: map,
-      title: attractions[i][2],
-      animation: google.maps.Animation.DROP,
-      icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png"
-    });
+    function dropAttractions(){
+        for (i = 0; i < attractions.length; i++) {
+        marker = new google.maps.Marker({
+        position: new google.maps.LatLng(attractions[i][0], attractions[i][1]),
+        map: map,
+        title: attractions[i][2],
+        animation: google.maps.Animation.DROP,
+        icon: attractionIcon
+        });}
+        }
 
-//     for (i = 0; i < attractions.length; i++) {
-//         var attraction = attractions[i];
-//         return new google.maps.Marker({
-//             position: { lat: attractions[1], lng: attractions[2] },
-//             map,
-//             animation : google.maps.Animation.DROP,
-//             icon: "lib/images/green-dot.png"
-//     });
-//   }
-}}}
+    function dropRestaurants(){
+        for (i = 0; i < restaurants.length; i++) {
+        marker = new google.maps.Marker({
+        position: new google.maps.LatLng(restaurants[i][0], restaurants[i][1]),
+        map: map,
+        title: restaurants[i][2],
+        animation: google.maps.Animation.DROP,
+        icon: restaurantIcon
+        });}
+        }
+        
+    function dropEvents(){
+    for (i = 0; i < events.length; i++) {
+        marker = new google.maps.Marker({
+        position: new google.maps.LatLng(events[i][0], events[i][1]),
+        map: map,
+        title: events[i][2],
+        animation: google.maps.Animation.DROP,
+        icon: eventIcon
+    });}
+    }
+}
