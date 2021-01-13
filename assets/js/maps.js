@@ -93,7 +93,7 @@ document.querySelector("input[name=attractionRadio]").addEventListener('change',
 //  document.querySelector('attractionRadio').addEventListener("CheckboxStateChange", onPlaceChanged); 
  document.getElementById('restaurantsRadio').addEventListener("CheckboxStateChange", onPlaceChanged); 
  document.getElementById('eventsRadio').addEventListener("CheckboxStateChange", onPlaceChanged);
-}
+
 
 var attractions = [
     [52.9717877, -9.4291244, '<h1>1</h1>'], 
@@ -133,8 +133,12 @@ var events = [{
 function onPlaceChanged() {
     document.querySelector("input[name=attractionRadio]").addEventListener('change', function() {
         if (this.checked) {
+        console.log("Checkbox is checked..")
         dropAttractions();
-  } 
+        } 
+        else {
+            console.log("Checkbox is not checked..");
+        }
 });
 //      else if ($("#restaurantsRadio").is(':checked')) {
 //         dropRestaurants();
@@ -143,15 +147,25 @@ function onPlaceChanged() {
 //         dropEvents();
 //      }
 }
+var marker, i;
 
 function dropAttractions(){
-    for (let i = 0; i < attractions.length; i++) {
-        const attraction = attractions[i];
-        return new google.maps.Marker({
-            position: { lat: attractions[1], lng: attractions[2] },
-            map,
-            animation : google.maps.Animation.DROP,
-            icon: "lib/images/green-dot.png"
+    for (i = 0; i < attractions.length; i++) {
+    marker = new google.maps.Marker({
+      position: new google.maps.LatLng(attractions[i][0], attractions[i][1]),
+      map: map,
+      title: attractions[i][2],
+      animation: google.maps.Animation.DROP,
+      icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png"
     });
-  }
-}
+
+//     for (i = 0; i < attractions.length; i++) {
+//         var attraction = attractions[i];
+//         return new google.maps.Marker({
+//             position: { lat: attractions[1], lng: attractions[2] },
+//             map,
+//             animation : google.maps.Animation.DROP,
+//             icon: "lib/images/green-dot.png"
+//     });
+//   }
+}}}
