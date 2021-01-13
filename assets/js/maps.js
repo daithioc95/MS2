@@ -82,17 +82,17 @@ function initMap() {
                 lng: -7.77832031} //Coordinates of Ireland
    }
 var map = new google.maps.Map(document.getElementById('map'), options);
-
+var markers = [];
 
 
 document.querySelector("input[name=attractionRadio]").addEventListener('change', function() {
   if (this.checked) {
-        console.log("Checkbox is checked..")
+        console.log("Checkbox is checked..");
         dropAttractions();
     } 
     else {
-        marker.setMap(null);
         console.log("Checkbox is not checked..");
+        removeAttractions();
     }
 });
 
@@ -102,7 +102,6 @@ document.querySelector("input[name=restaurantsRadio]").addEventListener('change'
         dropRestaurants();
     } 
     else {
-        setMap(null);
         console.log("Checkbox is not checked..");
     }
 });
@@ -113,7 +112,6 @@ document.querySelector("input[name=eventsRadio]").addEventListener('change', fun
         dropEvents();
     } 
     else {
-        setMap(null);
         console.log("Checkbox is not checked..");
     }
 });
@@ -151,9 +149,20 @@ const eventIcon = "http://maps.google.com/mapfiles/ms/icons/blue.png";
         map: map,
         title: attractions[i][2],
         animation: google.maps.Animation.DROP,
-        icon: attractionIcon
-        });}
-        }
+        icon: attractionIcon,
+        })
+        markers.push(marker);
+        }}
+
+    function removeAttractions(){
+        for(i=0; i<markers.length; i++){
+            markers[i].setMap(null);
+ }
+        markers.length = 0;
+        //     attractions[i].setMap(null);
+        //     attractions[i]=null;
+        // }
+}
 
     function dropRestaurants(){
         for (i = 0; i < restaurants.length; i++) {
@@ -176,4 +185,5 @@ const eventIcon = "http://maps.google.com/mapfiles/ms/icons/blue.png";
         icon: eventIcon
     });}
     }
+
 }
