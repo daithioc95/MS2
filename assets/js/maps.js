@@ -82,8 +82,9 @@ function initMap() {
                 lng: -7.77832031} //Coordinates of Ireland
    }
 var map = new google.maps.Map(document.getElementById('map'), options);
-var markers = [];
-
+var attractionMarkers = [];
+var restaurantsMarkers = [];
+var eventsMarkers = [];
 
 document.querySelector("input[name=attractionRadio]").addEventListener('change', function() {
   if (this.checked) {
@@ -103,6 +104,7 @@ document.querySelector("input[name=restaurantsRadio]").addEventListener('change'
     } 
     else {
         console.log("Checkbox is not checked..");
+        removeRestaurants();
     }
 });
 
@@ -113,6 +115,7 @@ document.querySelector("input[name=eventsRadio]").addEventListener('change', fun
     } 
     else {
         console.log("Checkbox is not checked..");
+        removeEvents();
     }
 });
 
@@ -151,17 +154,14 @@ const eventIcon = "http://maps.google.com/mapfiles/ms/icons/blue.png";
         animation: google.maps.Animation.DROP,
         icon: attractionIcon,
         })
-        markers.push(marker);
+        attractionMarkers.push(marker);
         }}
 
     function removeAttractions(){
-        for(i=0; i<markers.length; i++){
-            markers[i].setMap(null);
+        for(i=0; i<attractionMarkers.length; i++){
+            attractionMarkers[i].setMap(null);
  }
-        markers.length = 0;
-        //     attractions[i].setMap(null);
-        //     attractions[i]=null;
-        // }
+        attractionMarkers.length = 0;
 }
 
     function dropRestaurants(){
@@ -172,8 +172,16 @@ const eventIcon = "http://maps.google.com/mapfiles/ms/icons/blue.png";
         title: restaurants[i][2],
         animation: google.maps.Animation.DROP,
         icon: restaurantIcon
-        });}
-        }
+        });
+        restaurantsMarkers.push(marker);
+    }}
+
+    function removeRestaurants(){
+        for(i=0; i<restaurantsMarkers.length; i++){
+            restaurantsMarkers[i].setMap(null);
+ }
+        restaurantsMarkers.length = 0;
+}
         
     function dropEvents(){
     for (i = 0; i < events.length; i++) {
@@ -183,7 +191,13 @@ const eventIcon = "http://maps.google.com/mapfiles/ms/icons/blue.png";
         title: events[i][2],
         animation: google.maps.Animation.DROP,
         icon: eventIcon
-    });}
-    }
-
+    });
+        eventsMarkers.push(marker);
+}}
+    function removeEvents(){
+        for(i=0; i<eventsMarkers.length; i++){
+            eventsMarkers[i].setMap(null);
+ }
+        eventsMarkers.length = 0;
+}
 }
