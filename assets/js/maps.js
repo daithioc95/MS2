@@ -201,3 +201,5 @@ const eventIcon = "http://maps.google.com/mapfiles/ms/icons/blue.png";
         eventsMarkers.length = 0;
 }
 }
+
+// next steps : event handlers for markers clicks, eg. zoom, prompt html etc.
