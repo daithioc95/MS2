@@ -121,29 +121,35 @@ document.querySelector("input[name=eventsRadio]").addEventListener('change', fun
 
 
 var attractions = [
-    [52.9717877, -9.4291244, '<h1>1</h1>'], 
-    [53.34193275, -6.28672974298643, '<h1>2</h1>'], 
-    [55.24082145, -6.51163864, '<h1>3</h1>']
+    [52.9717877, -9.4291244, '<h1>Cliffs of Moher</h1>'], 
+    [53.34193275, -6.28672974298643, '<h1>Guiness Storehouse</h1>'], 
+    [55.24082145, -6.51163864, '<h1>Giants Causeway</h1>'],
+    [53.34110865, -6.25267, '<h1>National Gallery</h1>'],
+    [53.3606275 , -6.25263, '<h1>Croke Park</h1>'],
+    [53.0112891 , -6.32609, '<h1>Glendalough</h1>']
 ];
 
 var restaurants = [
-    [53.3454622, -6.26411, '<h1>1</h1>'], 
-    [53.335436, -6.26351, '<h1>2</h1>'], 
-    [53.33815205, -6.25418, '<h1>3</h1>']
+    [53.3454622, -6.26411, '<h1>The Temple Bar</h1>'], 
+    [53.335436, -6.26351, '<h1>Coppers</h1>'], 
+    [53.33815205, -6.25418, '<h1>ODonoghues</h1>'],
+    [54.6021395, -5.92705, '<h1>Harp Bar</h1>'],
+    [51.9017201, -8.47109, '<h1>Sin é</h1>']
 ];
 
-
 var events = [
-    [53.69469735, -6.47555 , '<h1>1</h1>'],
-    [53.3528582, -6.2645, '<h1>2</h1>'], 
-    [52.33819075, -6.46211, '<h1>3</h1>']
+    [53.69469735, -6.47555 , '<h1>Newgrange</h1>'],
+    [53.3528582, -6.2645, '<h1>St. Patricks Day Festival</h1>'], 
+    [52.33819075, -6.46211, '<h1>Wexford Opera Festival</h1>'],
+    [52.0595746, -9.50532, '<h1>Ring of Kerry cycle</h1>'],
+    [53.62569255, -6.88866, '<h1>Púca Halloween Festival</h1>']
 ];
 
 
 var marker, i;
-const attractionIcon = "http://maps.google.com/mapfiles/ms/icons/red.png";
-const restaurantIcon = "http://maps.google.com/mapfiles/ms/icons/green.png";
-const eventIcon = "http://maps.google.com/mapfiles/ms/icons/blue.png";
+const attractionIcon = "http://maps.google.com/mapfiles/ms/icons/green.png";
+const restaurantIcon = "http://maps.google.com/mapfiles/ms/icons/grey.png";
+const eventIcon = "http://maps.google.com/mapfiles/ms/icons/orange.png";
 
     function dropAttractions(){
         for (i = 0; i < attractions.length; i++) {
