@@ -99,7 +99,7 @@ document.querySelector("input[name=attractionRadio]").addEventListener('change',
 
 document.querySelector("input[name=restaurantsRadio]").addEventListener('change', function() {
   if (this.checked) {
-        console.log("Checkbox is checked..")
+        console.log("Checkbox is checked..");
         dropRestaurants();
     } 
     else {
@@ -110,7 +110,7 @@ document.querySelector("input[name=restaurantsRadio]").addEventListener('change'
 
 document.querySelector("input[name=eventsRadio]").addEventListener('change', function() {
   if (this.checked) {
-        console.log("Checkbox is checked..")
+        console.log("Checkbox is checked..");
         dropEvents();
     } 
     else {
@@ -199,13 +199,25 @@ const eventIcon = "http://maps.google.com/mapfiles/ms/icons/orange.png";
         icon: eventIcon
     });
         eventsMarkers.push(marker);
-}}
+}
+
+ }
+    //   google.maps.event.addListener(marker, 'click', (function(marker, i) {
+    //     return function() {
+    //     //   infowindow.setContent(events[i][0]);
+    //     //   infowindow.open(map, marker);
+    //     map.setZoom(8);
+    //     map.setCenter(marker.getPosition());
+    //     }
+    //   })(marker, i));
+    
     function removeEvents(){
         for(i=0; i<eventsMarkers.length; i++){
             eventsMarkers[i].setMap(null);
  }
         eventsMarkers.length = 0;
 }
+
 }
 
 // next steps : event handlers for markers clicks, eg. zoom, prompt html etc.
