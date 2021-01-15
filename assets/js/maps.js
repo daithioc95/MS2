@@ -161,6 +161,21 @@ const eventIcon = "http://maps.google.com/mapfiles/ms/icons/orange.png";
         icon: attractionIcon,
         })
         attractionMarkers.push(marker);
+    //                                 // Option3
+    //     for (i = 0; i < attractions.length; i++) {
+    //     marker = new google.maps.Marker({
+    //         position: new google.maps.LatLng(attractions[i][0], attractions[i][1]),
+    //         map: map,
+    //         icon: attractionIcon
+    //     });
+
+    //     google.maps.event.addListener(marker, 'click', (function(marker, i) {
+    //         return function() {
+    //             map.setZoom(8);
+    //             map.setCenter(marker.getPosition());
+    //         }
+    //     })(marker, i));
+    // }
         }}
 
     function removeAttractions(){
@@ -180,6 +195,21 @@ const eventIcon = "http://maps.google.com/mapfiles/ms/icons/orange.png";
         icon: restaurantIcon
         });
         restaurantsMarkers.push(marker);
+    //                         // Option3
+    //     for (i = 0; i < restaurants.length; i++) {
+    //     marker = new google.maps.Marker({
+    //         position: new google.maps.LatLng(restaurants[i][0], restaurants[i][1]),
+    //         map: map,
+    //         icon: restaurantIcon
+    //     });
+
+    //     google.maps.event.addListener(marker, 'click', (function(marker, i) {
+    //         return function() {
+    //             map.setZoom(8);
+    //             map.setCenter(marker.getPosition());
+    //         }
+    //     })(marker, i));
+    // }
     }}
 
     function removeRestaurants(){
@@ -199,23 +229,22 @@ const eventIcon = "http://maps.google.com/mapfiles/ms/icons/orange.png";
         icon: eventIcon
     });
         eventsMarkers.push(marker);
-                    // Option3
-        for (i = 0; i < events.length; i++) {
-        marker = new google.maps.Marker({
-            position: new google.maps.LatLng(events[i][0], events[i][1]),
-            map: map,
-            icon: eventIcon
-        });
-
-        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
                 map.setZoom(8);
                 map.setCenter(marker.getPosition());
             }
         })(marker, i));
-    }
 }
 }
+    //                 // Option3
+    //     for (i = 0; i < eventsMarkers.length; i++) {
+    //     marker = new google.maps.Marker({
+    //         position: new google.maps.LatLng(eventsMarkers[i][0], eventsMarkers[i][1]),
+    //         map: map,
+    //         icon: eventIcon
+    //     });
+    // }
     //     // Option2
     //   marker.addListener('click', function() {
     //   map.setZoom(8);
