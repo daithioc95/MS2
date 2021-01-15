@@ -540,3 +540,9 @@ div#filter{
 .filter{
     padding: 20px;
 }
+
+#attraction1{
+        display: none;
+}
+.location-image{width:100%;
+display: none;}
