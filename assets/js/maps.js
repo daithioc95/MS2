@@ -199,9 +199,30 @@ const eventIcon = "http://maps.google.com/mapfiles/ms/icons/orange.png";
         icon: eventIcon
     });
         eventsMarkers.push(marker);
-}
+                    // Option3
+        for (i = 0; i < events.length; i++) {
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(events[i][0], events[i][1]),
+            map: map,
+            icon: eventIcon
+        });
 
- }
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                map.setZoom(8);
+                map.setCenter(marker.getPosition());
+            }
+        })(marker, i));
+    }
+}
+}
+    //     // Option2
+    //   marker.addListener('click', function() {
+    //   map.setZoom(8);
+    //   map.setCenter(marker.getPosition());
+    //   });
+ 
+//  Option1
     //   google.maps.event.addListener(marker, 'click', (function(marker, i) {
     //     return function() {
     //     //   infowindow.setContent(events[i][0]);
@@ -211,6 +232,7 @@ const eventIcon = "http://maps.google.com/mapfiles/ms/icons/orange.png";
     //     }
     //   })(marker, i));
     
+
     function removeEvents(){
         for(i=0; i<eventsMarkers.length; i++){
             eventsMarkers[i].setMap(null);
