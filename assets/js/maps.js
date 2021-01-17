@@ -287,71 +287,107 @@ function showAttraction1(){
 //     x[0].style.display = "none";
 //     x[1].style.display = "none"
 //   }
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
 $("#attraction-image-1").toggle();
 $("#attraction-intro-1").toggle();
 }
 
 function showAttraction2(){
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
 $("#attraction-image-2").toggle();
 $("#attraction-intro-2").toggle();
 }
 function showAttraction3(){
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
 $("#attraction-image-3").toggle();
 $("#attraction-intro-3").toggle();
 }
 function showAttraction4(){
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
 $("#attraction-image-4").toggle();
 $("#attraction-intro-4").toggle();
 }
 function showAttraction5(){
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
 $("#attraction-image-5").toggle();
 $("#attraction-intro-5").toggle();
+}
+function showAttraction6(){
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
+$("#attraction-image-6").toggle();
+$("#attraction-intro-6").toggle();
 }
 
 // Restaurant toggle
 function showRestaurant1(){
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
 $("#attraction-image-1").toggle();
 $("#attraction-intro-1").toggle();
 }
 
 function showRestaurant2(){
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
 $("#restaurant-image-2").toggle();
 $("#restaurant-intro-2").toggle();
 }
 function showRestaurant3(){
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
 $("#restaurant-image-3").toggle();
 $("#restaurant-intro-3").toggle();
 }
 function showRestaurant4(){
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
 $("#restaurant-image-4").toggle();
 $("#restaurant-intro-4").toggle();
 }
 function showRestaurant5(){
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
 $("#restaurant-image-5").toggle();
 $("#restaurant-intro-5").toggle();
 }
 
 // events toggler
 function showEvent1(){
-$("#attraction-image-1").toggle();
-$("#attraction-intro-1").toggle();
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
+$("#event-image-1").toggle();
+$("#event-intro-1").toggle();
 }
 
 function showEvent2(){
-$("#restaurant-image-2").toggle();
-$("#restaurant-intro-2").toggle();
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
+$("#event-image-2").toggle();
+$("#event-intro-2").toggle();
 }
 function showEvent3(){
-$("#restaurant-image-3").toggle();
-$("#restaurant-intro-3").toggle();
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
+$("#event-image-3").toggle();
+$("#event-intro-3").toggle();
 }
 function showEvent4(){
-$("#restaurant-image-4").toggle();
-$("#restaurant-intro-4").toggle();
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
+$("#event-image-4").toggle();
+$("#event-intro-4").toggle();
 }
 function showEvent5(){
-$("#restaurant-image-5").toggle();
-$("#restaurant-intro-5").toggle();
+$(".location-image").css("display", "none");
+$(".location-info").css("display", "none");
+$("#event-image-5").toggle();
+$("#event-intro-5").toggle();
 }
 
-// next steps : event handlers for markers clicks, eg. zoom, prompt html etc.
+// fix toggle on button click if possible
