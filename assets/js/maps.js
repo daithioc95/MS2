@@ -121,28 +121,28 @@ document.querySelector("input[name=eventsRadio]").addEventListener('change', fun
 
 
 var attractions = [
-    [52.9717877, -9.4291244, '<button id onclick="showelement()">Cliffs of Moher</button>'], 
-    [53.34193275, -6.28672974298643, '<h6>Guiness Storehouse</h6>'], 
-    [55.24082145, -6.51163864, '<h6>Giants Causeway</h6>'],
-    [53.34110865, -6.25267, '<h6>National Gallery</h6>'],
-    [53.3606275 , -6.25263, '<h6>Croke Park</h6>'],
-    [53.0112891 , -6.32609, '<h6>Glendalough</h6>']
+    [52.9717877, -9.4291244, '<button class = "map-button" onclick="showAttraction1()">Cliffs of Moher</button>'], 
+    [53.34193275, -6.28672974298643, '<button class = "map-button" onclick="showAttraction2()">Guiness Storehouse</button>'], 
+    [55.24082145, -6.51163864, '<button class = "map-button" onclick="showAttraction3()">Giants Causeway</button>'],
+    [53.34110865, -6.25267, '<button class = "map-button" onclick="showAttraction4()">National Gallery</button>'],
+    [53.3606275 , -6.25263, '<button class = "map-button" onclick="showAttraction5()">Croke Park</button>'],
+    [53.0112891 , -6.32609, '<button class = "map-button" onclick="showAttraction6()">Glendalough</button>']
 ];
 
 var restaurants = [
-    [53.3454622, -6.26411, '<h6>The Temple Bar</h6>'], 
-    [53.335436, -6.26351, '<h6>Coppers</h6>'], 
-    [53.33815205, -6.25418, '<h6>ODonoghues</h6>'],
-    [54.6021395, -5.92705, '<h6>Harp Bar</h6>'],
-    [51.9017201, -8.47109, '<h6>Sin é</h6>']
+    [53.3454622, -6.26411, '<button class = "map-button" onclick="showRestaurant1()">The Temple Bar</button>'], 
+    [53.335436, -6.26351, '<button class = "map-button" onclick="showRestaurant2()">Coppers</button>'], 
+    [53.33815205, -6.25418, '<button class = "map-button" onclick="showRestaurant3()">ODonoghues</button>'],
+    [54.6021395, -5.92705, '<button class = "map-button" onclick="showRestaurant4()">Harp Bar</button>'],
+    [51.9017201, -8.47109, '<button class = "map-button" onclick="showRestaurant5()">Sin é</button>']
 ];
 
 var events = [
-    [53.69469735, -6.47555 , '<h6>Newgrange</h6>'],
-    [53.3528582, -6.2645, '<h6>St. Patricks Day Festival</h6>'], 
-    [52.33819075, -6.46211, '<h6>Wexford Opera Festival</h6>'],
-    [52.0595746, -9.50532, '<h6>Ring of Kerry cycle</h6>'],
-    [53.62569255, -6.88866, '<h6>Púca Halloween Festival</h6>']
+    [53.69469735, -6.47555 , '<button class = "map-button" onclick="showEvent1()">Newgrange</button>'],
+    [53.3528582, -6.2645, '<button class = "map-button" onclick="showEvent2()">St. Patricks Day Festival</button>'], 
+    [52.33819075, -6.46211, '<button class = "map-button" onclick="showEvent3()">Wexford Opera Festival</button>'],
+    [52.0595746, -9.50532, '<button class = "map-button" onclick="showEvent4()">Ring of Kerry cycle</button>'],
+    [53.62569255, -6.88866, '<button class = "map-button" onclick="showEvent5()">Púca Halloween Festival</button>']
 ];
 
 
@@ -278,7 +278,7 @@ function smoothZoom (map, max, cnt) {
 
 }
 
-function showelement(){
+function showAttraction1(){
 //  var x = document.getElementById("attraction1");
 //   if (x[0].style.display === "none" && x[1].style.display === "none") {
 //     x[0].style.display = "block";
@@ -287,7 +287,71 @@ function showelement(){
 //     x[0].style.display = "none";
 //     x[1].style.display = "none"
 //   }
-$("#attraction1").toggle();
-$(".location-image").toggle();
+$("#attraction-image-1").toggle();
+$("#attraction-intro-1").toggle();
 }
+
+function showAttraction2(){
+$("#attraction-image-2").toggle();
+$("#attraction-intro-2").toggle();
+}
+function showAttraction3(){
+$("#attraction-image-3").toggle();
+$("#attraction-intro-3").toggle();
+}
+function showAttraction4(){
+$("#attraction-image-4").toggle();
+$("#attraction-intro-4").toggle();
+}
+function showAttraction5(){
+$("#attraction-image-5").toggle();
+$("#attraction-intro-5").toggle();
+}
+
+// Restaurant toggle
+function showRestaurant1(){
+$("#attraction-image-1").toggle();
+$("#attraction-intro-1").toggle();
+}
+
+function showRestaurant2(){
+$("#restaurant-image-2").toggle();
+$("#restaurant-intro-2").toggle();
+}
+function showRestaurant3(){
+$("#restaurant-image-3").toggle();
+$("#restaurant-intro-3").toggle();
+}
+function showRestaurant4(){
+$("#restaurant-image-4").toggle();
+$("#restaurant-intro-4").toggle();
+}
+function showRestaurant5(){
+$("#restaurant-image-5").toggle();
+$("#restaurant-intro-5").toggle();
+}
+
+// events toggler
+function showEvent1(){
+$("#attraction-image-1").toggle();
+$("#attraction-intro-1").toggle();
+}
+
+function showEvent2(){
+$("#restaurant-image-2").toggle();
+$("#restaurant-intro-2").toggle();
+}
+function showEvent3(){
+$("#restaurant-image-3").toggle();
+$("#restaurant-intro-3").toggle();
+}
+function showEvent4(){
+$("#restaurant-image-4").toggle();
+$("#restaurant-intro-4").toggle();
+}
+function showEvent5(){
+$("#restaurant-image-5").toggle();
+$("#restaurant-intro-5").toggle();
+}
+
 // next steps : event handlers for markers clicks, eg. zoom, prompt html etc.
