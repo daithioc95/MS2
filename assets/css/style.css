@@ -546,3 +546,14 @@ div#filter{
 }
 .location-image{width:100%;
 display: none;}
+
+@media screen and (max-width:768px) {
+.location-image{
+    margin-left: auto;
+    margin-right: auto;
+}
+.filter-checkboxes{
+    margin-left: auto;
+    margin-right: auto;
+}
+}
