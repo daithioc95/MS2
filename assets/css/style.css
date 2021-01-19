@@ -223,6 +223,7 @@ div#filter{
         bottom: 0;
         background-color: #75A2BD;
         /*same background color of navbar*/
+        background: rgba(0,0,0,0.2);
         background-position: center top;
     }
     .nav div.main_list ul li {
@@ -391,6 +392,7 @@ div#filter{
 @media screen and (max-width:991px) {
     .navbar{
         background-color: #75A2BD;
+        background: rgba(0,0,0,0.2);
         height: 65px;
         line-height: 65px;
     }
