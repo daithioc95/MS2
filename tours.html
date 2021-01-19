@@ -141,6 +141,7 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/evo-calendar.min.js"></script>
     <script type="text/javascript" src="assets/js/carousel.js"></script>
+    <script type="text/javascript" src="assets/js/calendar.js"></script>
     <script>
         $(window).scroll(function () {
             if ($(document).scrollTop() > 50) {
@@ -152,29 +153,6 @@
                 $('a#brand, a.nav-link').removeClass('affix-shadow');
             }
         });
-        // initialize evo-calendar
-        $(document).ready(function () {
-            $('#calendar').evoCalendar({
-                theme: 'Royal Navy',
-                calendarEvents: [
-                    {
-                        id: 'bHay68s', // Event's ID (required)
-                        name: "New Year", // Event name (required)
-                        date: "January/1/2020", // Event date (required)
-                        type: "holiday", // Event type (required)
-                        everyYear: true // Same event every year (optional)
-                    },
-                    {
-                        name: "Vacation Leave",
-                        badge: "02/13 - 02/15", // Event badge (optional)
-                        date: ["February/13/2020", "February/15/2020"], // Date range
-                        description: "Vacation leave for 3 days.", // Event description (optional)
-                        type: "event",
-                        color: "#63d867" // Event custom color (optional)
-                    }
-                ]
-            })
-        })
     </script>
 </body>
 
