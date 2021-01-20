@@ -24,6 +24,7 @@ for (var i=0; i<30; i++) {
     events[i] = {
         id: 'Friday Morning Tour' + (i+1) , // Event's ID (required)
         name: "Morning Tour 9.00",// Event name (required)
+        badge: "Book Now", // Event badge (optional)
         date: (date), // Event date (required)
         type: "event",  // Event type (required)
         color: "yellow"
@@ -50,8 +51,9 @@ for (var i=30; i<60; i++) {
     events[i] = {
         id: 'Friday Noon Tour' + (i+1) , // Event's ID (required)
         name: "Noon Tour 9.00",// Event name (required)
+        badge: "Book Now", // Event badge (optional)
         date: (date), // Event date (required)
-        type: "event",  // Event type (required)
+        type: "holiday",  // Event type (required)
         color: "red"
     };
 }
@@ -75,6 +77,7 @@ for (var i=60; i<90; i++) {
     events[i] = {
         id: 'Saturday Morning Tour' + (i+1) , // Event's ID (required)
         name: "Morning Tour 9.00",// Event name (required)
+        badge: "Book Now", // Event badge (optional)
         date: (date), // Event date (required)
         type: "event",  // Event type (required)
         color: "yellow"
@@ -100,12 +103,12 @@ for (var i=90; i<120; i++) {
     events[i] = {
         id: 'Saturday Noon Tour' + (i+1) , // Event's ID (required)
         name: "Noon Tour 12.00",// Event name (required)
+        badge: "Book Now", // Event badge (optional)
         date: (date), // Event date (required)
-        type: "event",  // Event type (required)
+        type: "holiday",  // Event type (required)
         color: "red"
     };
 }
-console.log(events);
 
 // initialize evo-calendar
 $(document).ready(function () {
@@ -114,6 +117,8 @@ $(document).ready(function () {
         calendarEvents: events
     })
 })
+
+
 
             // [
 
@@ -159,3 +164,10 @@ $(document).ready(function () {
 //     };
 // }
 // console.log(title);
+
+
+// const el1 = document.getElementsByClassName("event-title").querySelector("span");
+// const el2 = document.querySelector(/* ... */)
+
+
+

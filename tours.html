@@ -95,6 +95,27 @@
         </div>
     </section>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            ...
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
     <footer>
         <div id="footer-social" class="col-12">
             <h5 class="uppercase general-sub">Social</h5>
@@ -124,11 +145,7 @@
         </div>
     </footer>
 
-    <script
-        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADq66twskCpg_SQwgjmY4o9SgnKue0wLE&callback=initMap"></script>
-    <script src="assets/js/maps.js"></script>
+
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -153,6 +170,9 @@
                 $('a#brand, a.nav-link').removeClass('affix-shadow');
             }
         });
+        const booking = document.querySelectorAll("p > event-title > button");
+        $(booking).replaceWith( "<h2>New heading</h2>" );
+        console.log(booking);
     </script>
 </body>
 
