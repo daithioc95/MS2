@@ -548,7 +548,8 @@ div#filter{
         display: none;
 }
 .location-image{width:100%;
-display: none;}
+display: none;
+margin-bottom: 15px;}
 
 @media screen and (max-width:768px) {
 .location-image{
@@ -572,6 +573,10 @@ display: none;}
   color: #069;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.attraction-heading{
+    padding-left: 10%;
 }
 
 /* Evo-Calendar */
