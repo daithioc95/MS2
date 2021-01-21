@@ -100,8 +100,12 @@ footer {
 /* Google Maps API */
 
 div#map {
-    min-height: 390px;
+    min-height: 360px;
 }
+@media screen and (min-width:570px) {
+div#map {
+    min-height: 400px;
+}}
 
 div#filter{
     min-height: 360px;
