@@ -332,8 +332,8 @@ function showAttraction6() {
 function showRestaurant1() {
     $(".location-image").css("display", "none");
     $(".location-info").css("display", "none");
-    $("#attraction-image-1").toggle();
-    $("#attraction-intro-1").toggle();
+    $("#restaurant-image-1").toggle();
+    $("#restaurant-intro-1").toggle();
 }
 
 function showRestaurant2() {
