@@ -169,5 +169,12 @@ $(document).ready(function () {
 // const el1 = document.getElementsByClassName("event-title").querySelector("span");
 // const el2 = document.querySelector(/* ... */)
 
+// document.getElementsByClassName("day").addEventListener('click', function () {
+//     toggleEventList();
+// });
 
-
+document.querySelectorAll('.day').forEach(item => {
+  item.addEventListener('click', event => {
+    toggleEventList();
+  })
+})
