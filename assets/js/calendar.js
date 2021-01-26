@@ -185,6 +185,17 @@ $(document).ready(function () {
 
 
 $('#calendar').on('selectEvent', function(event, activeEvent) {
-     $('#exampleModalCenter').modal('toggle')
-    console.log("selected");
+     $('#exampleModalCenter').modal('toggle');
+});
+
+// https://www.tutorialrepublic.com/faq/how-to-detect-a-mobile-device-in-jquery.php
+$(document).ready(function(){
+    if(window.matchMedia("(max-width: 425px)").matches){
+        // The viewport is less than 768 pixels wide
+        $('#calendar').on('selectDate', function(event, newDate, oldDate) {
+         $('#calendar').evoCalendar('toggleEventList', true);
+   });
+    } else{
+        // The viewport is at least 768 pixels wide
+    }
 });
