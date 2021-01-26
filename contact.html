@@ -111,6 +111,10 @@
                 $('a#brand, a.nav-link').removeClass('affix-shadow');
             }
         });
+        $("#contact-form").on("submit", function(event) {
+                event.preventDefault();
+                alert("This is a dummy form and will not be submitted, thanks");
+            });
     </script>
 </body>
 </html>
