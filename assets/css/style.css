@@ -51,11 +51,16 @@ a#brand, a.nav-link{
     font-size: 50px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 40%;
+    bottom: 50%;
     width: 100%;
     text-align: center;
 }
 
+@media screen and (max-width: 570px){
+.text {
+    bottom: 30% !important;
+}
+}
 /*------------ Footer------------ */
 
 #footer-social {
