@@ -50,7 +50,7 @@ for (var i=30; i<60; i++) {
  fnDate.setDate(fnDate.getDate() + 7);  
     events[i] = {
         id: 'Friday Noon Tour' + (i+1) , // Event's ID (required)
-        name: "Noon Tour 9.00",// Event name (required)
+        name: "Noon Tour 12.00",// Event name (required)
         badge: "Book Now", // Event badge (optional)
         date: (date), // Event date (required)
         type: "holiday",  // Event type (required)
@@ -173,8 +173,18 @@ $(document).ready(function () {
 //     toggleEventList();
 // });
 
-document.querySelectorAll('.day').forEach(item => {
-  item.addEventListener('click', event => {
-    toggleEventList();
-  })
-})
+// document.querySelectorAll('.day').forEach(item => {
+//   item.addEventListener('click', event => {
+//     toggleEventList();
+//   })
+// })
+// $('#calendar').on('selectDate', function(event, newDate, oldDate) {
+//      toggleEventList();
+// });
+
+
+
+$('#calendar').on('selectEvent', function(event, activeEvent) {
+     $('#exampleModalCenter').modal('toggle')
+    console.log("selected");
+});

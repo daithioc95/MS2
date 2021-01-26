@@ -99,22 +99,42 @@
     </section>
 
     <!-- Modal -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Book a tour</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <div class="center-form">
+                        <form id="contact-form" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="exampleFormControlInput3" placeholder="Phone number">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Any additional information"></textarea>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button id="modal-submit-button" type="submit" class="btn btn-info">Submit</button>
                 </div>
             </div>
         </div>
@@ -172,15 +192,14 @@
             if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');
                 $('a#brand, a.nav-link').addClass('affix-shadow');
-                console.log("OK");
             } else {
                 $('.nav').removeClass('affix');
                 $('a#brand, a.nav-link').removeClass('affix-shadow');
             }
         });
-        const booking = document.querySelectorAll("p > event-title > button");
-        $(booking).replaceWith("<h2>New heading</h2>");
-        console.log(booking);
+        $("#modal-submit-button").click(function(){
+                alert("This is a dummy form and will not be submitted, thanks");
+            });
     </script>
 </body>
 
