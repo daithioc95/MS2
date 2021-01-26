@@ -608,3 +608,24 @@ margin-bottom: 15px;}
     -o-transition: all .3s ease;
     transition: all .3s ease;}
 }
+
+.royal-navy .calendar-events{
+    background-color: #75A2BD;
+}
+.royal-navy .calendar-sidebar{
+    background-color: #75A2BD;
+}
+
+.royal-navy #eventListToggler {
+    background-color: #52C50D;
+    -webkit-box-shadow: 0 5px 10px -3px #52C50D;
+    box-shadow: 0 5px 10px -3px #52C50D;}
+
+.royal-navy .calendar-sidebar>span#sidebarToggler {   
+    background-color: #52C50D;
+    -webkit-box-shadow: 0 5px 10px -3px #52C50D;
+    box-shadow: 0 5px 10px -3px #52C50D;}
+
+.royal-navy th[colspan="7"] {
+    color: #75A2BD;
+}
