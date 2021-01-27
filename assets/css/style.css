@@ -1,7 +1,12 @@
 /* Font */
 *{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: Poppins;
 }
+h1, h2, h3, h4{
+    color: #75A2BD;
+}
+
 h1, h2, h3{
     color: #75A2BD;
     text-align: center;
@@ -11,9 +16,11 @@ h2{font-size: 32px;
     padding-bottom: 20px;
 }
 
-p{
+p:not(.description){
     padding-left: 10%;
     padding-right: 10%;
+    line-height: 26pt;
+    font-size: 20px;
 }
 /* Navbar */
 
@@ -51,7 +58,7 @@ a#brand, a.nav-link{
     font-size: 50px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 50%;
+    bottom: 45%;
     width: 100%;
     text-align: center;
 }
