@@ -16,11 +16,16 @@ h2{font-size: 32px;
     padding-bottom: 20px;
 }
 
-p:not(.description){
+p:not(.description):not(.location-info){
     padding-left: 10%;
     padding-right: 10%;
     line-height: 26pt;
     font-size: 20px;
+}
+
+.location-info h4{
+    padding-left: 10%;
+    padding-right: 10%;
 }
 /* Navbar */
 
@@ -596,7 +601,7 @@ margin-bottom: 15px;}
 }
 
 .attraction-heading{
-    padding-left: 10%;
+    /* padding-left: 10%; */
 }
 
 /* Evo-Calendar */
@@ -616,10 +621,20 @@ margin-bottom: 15px;}
     transition: all .3s ease;}
 }
 
+.royal-navy .calendar-sidebar>.calendar-year{
+    background-color: #75A2BD;
+}
+
+.royal-navy .calendar-sidebar>.month-list>.calendar-months{
+    background-color: #75A2BD;
+}
 .royal-navy .calendar-events{
     background-color: #75A2BD;
 }
 .royal-navy .calendar-sidebar{
+    background-color: #75A2BD;
+}
+.royal-navy .calendar-sidebar>.month-list{
     background-color: #75A2BD;
 }
 
