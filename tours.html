@@ -48,7 +48,7 @@
             </div>
         </nav>
     </header>
-
+    <!-- Tours Welcome image -->
     <div class="welcome-image">
         <img src="assets/images/rsz_water-bridge-town-city-river-canal-1000001-pxherecom.jpg" class="welcome-img"
             alt="tours welcome image">
@@ -57,14 +57,16 @@
     <section class="about-text-section container-fluid">
         <div class="row">
             <div class="col-12">
+                 <!-- Tours heading -->
                 <h2>Tours</h2>
-                <p>
+                <!-- Tours content -->
+                <p class="page-content">
                     We currently run Dublin walking tours 4 times a week. Twice on Friday and twice on Saturday. Please
                     see tour details below. Payments are accepted at the starting point in advance of the starting time.
                     Please select your date and time in the calendar below and fill in the form to secure a place. Our
                     tours are provided in English and Chinese.
                 </p>
-                <p>
+                <p class="page-content">
                     <b>Duration:</b> 1 hr 30 mins<br>
                     <b>Starting Point:</b> The Spire<br>
                     <b>Price:</b> €10 <br>
@@ -84,13 +86,14 @@
             </div>
         </div>
     </section>
-    <!-- updated below from float container -->
-    <section id="book-a-tour" class="container">
+    <!-- Book a tour section -->
+    <section id="book-a-tour" class="container">    
         <div class="row">
             <div class="col-12">
                 <h2>Book a Tour</h2>
             </div>
         </div>
+        <!-- Calendar to book tour -->
         <div class="row calendar-container">
             <div class="col-12">
                 <div id="calendar"></div>
@@ -98,13 +101,12 @@
         </div>
     </section>
 
-    <!-- Modal -->
-    <!-- Button trigger modal -->
+    <!-- Button to trigger modal -->
     <button type="button" class="invisible btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
         Launch demo modal
     </button>
 
-    <!-- Modal -->
+    <!-- Bootstrap Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -119,16 +121,20 @@
                     <div class="center-form">
                         <form id="contact-form" method="post" enctype="text/plain">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Name">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                                <input type="email" class="form-control" id="exampleFormControlInput2"
+                                    placeholder="name@example.com">
                             </div>
                             <div class="form-group">
-                                <input type="tel" class="form-control" id="exampleFormControlInput3" placeholder="Phone number">
+                                <input type="tel" class="form-control" id="exampleFormControlInput3"
+                                    placeholder="Phone number">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Any additional information"></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Any additional information"></textarea>
                             </div>
                         </form>
                     </div>
@@ -188,6 +194,7 @@
     <script type="text/javascript" src="assets/js/carousel.js"></script>
     <script type="text/javascript" src="assets/js/calendar.js"></script>
     <script>
+        // JS code for navbar to reappear
         $(window).scroll(function () {
             if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');
@@ -197,9 +204,10 @@
                 $('a#brand, a.nav-link').removeClass('affix-shadow');
             }
         });
-        $("#modal-submit-button").click(function(){
-                alert("This is a dummy form and will not be submitted, thanks");
-            });
+        // JS code to promt user on form submit
+        $("#modal-submit-button").click(function () {
+            alert("This is a dummy form and will not be submitted, thanks");
+        });
     </script>
 </body>
 

@@ -1,107 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <title>Gulliver's travels</title>
-    </head>
-<body>
-    <header>
-            <nav class="nav navbar navbar-expand-lg navbar-light">
-                <a id="brand" class="navbar-brand" href="index.html">Gulliver's Travels</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tours.html">Tours</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="events.html">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-    </header>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Gulliver's travels</title>
+</head>
+
+<body>
+    <!-- Header section, includng Bootstrap navbar -->
+    <header>
+        <nav class="nav navbar navbar-expand-lg navbar-light">
+            <a id="brand" class="navbar-brand" href="index.html">Gulliver's Travels</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tours.html">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Contact Welcome image -->
     <div class="welcome-image">
         <img src="assets/images/rsz_pexels-lucian-potlog-3566191.jpg" class="welcome-img" alt="about welcome image">
     </div>
 
     <section class="contact-section container">
-            <div class="row contact-me">
-                <div class="col text-center">
-                    <!-- Contact heading -->
-                    <h2 id="contact-heading"><i class="fas fa-dove"></i><br><br>Want to contact us?</h2>
-                    <h5 class="text-center">Fill in the below with info on your query</h5>
-                    <!-- Form Input -->
-                    <div class="center-form">
-                        <form id="contact-form" method="post" enctype="text/plain">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Please enter details about your query"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-info">Submit</button>
-                        </form>
-                    </div>
+        <div class="row contact-me">
+            <div class="col text-center">
+                <!-- Contact heading -->
+                <h2 id="contact-heading"><i class="fas fa-dove"></i><br><br>Want to contact us?</h2>
+                <h5 class="text-center">Fill in the below with info on your query</h5>
+                <!-- Bootstrap Form Input -->
+                <div class="center-form">
+                    <form id="contact-form" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleFormControlInput2"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Please enter details about your query"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-info">Submit</button>
+                    </form>
                 </div>
             </div>
-        </section>
-        <footer>
-            <div id="footer-social" class="col-12">
-                <h5 class="uppercase general-sub">Social</h5>
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-facebook" aria-hidden="true">
-                                <span class="sr-only">Facebook</span>
-                            </i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="mailto:daithioc@outlook.com">
-                            <i class="fa fa-envelope" aria-hidden="true">
-                                <span class="sr-only">Email</span>
-                            </i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-weixin" aria-hidden="true">
-                                <span class="sr-only">WeChat</span>
-                            </i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+        </div>
+    </section>
+    <footer>
+        <div id="footer-social" class="col-12">
+            <h5 class="uppercase general-sub">Social</h5>
+            <ul class="list-inline social-links">
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
+                        <i class="fa fa-facebook" aria-hidden="true">
+                            <span class="sr-only">Facebook</span>
+                        </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="mailto:daithioc@outlook.com">
+                        <i class="fa fa-envelope" aria-hidden="true">
+                            <span class="sr-only">Email</span>
+                        </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="#">
+                        <i class="fa fa-weixin" aria-hidden="true">
+                            <span class="sr-only">WeChat</span>
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="assets/js/carousel.js"></script>
-        <script>
-        $(window).scroll(function() {
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/carousel.js"></script>
+    <script>
+        // JS code for navbar to reappear
+        $(window).scroll(function () {
             if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');
                 $('a#brand, a.nav-link').addClass('affix-shadow');
@@ -111,10 +128,12 @@
                 $('a#brand, a.nav-link').removeClass('affix-shadow');
             }
         });
-        $("#contact-form").on("submit", function(event) {
-                event.preventDefault();
-                alert("This is a dummy form and will not be submitted, thanks");
-            });
+        // JS code to promt user on form submit
+        $("#contact-form").on("submit", function (event) {
+            event.preventDefault();
+            alert("This is a dummy form and will not be submitted, thanks");
+        });
     </script>
 </body>
+
 </html>

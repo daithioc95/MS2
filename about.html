@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <!-- Header section, includng navbar (Bootstrap) -->
+    <!-- Header section, includng Bootstrap navbar -->
     <header>
         <nav class="nav navbar navbar-expand-lg navbar-light">
             <a id="brand" class="navbar-brand" href="index.html">Gulliver's Travels</a>
@@ -46,30 +46,30 @@
             </div>
         </nav>
     </header>
-
+    <!-- About Welcome image -->
     <div class="welcome-image">
         <img src="assets/images/rsz_sea-coast-water-nature-ocean-horizon-916193-pxherecom.jpg" class="welcome-img"
             alt="about welcome image">
     </div>
-
     <section class="about-text-section container-fluid">
         <div class="row">
             <div class="col-12">
+                <!-- About heading -->
                 <h2>About</h2>
-                <p>
+                <!-- About website text -->
+                <p class="page-content">
                     Gulliver’s Travels is a tourist agency for anyone interested in visiting or learning more about the
                     island of Ireland. In addition to providing an informative service, we also provide tours services
                     of Dublin City.
                 </p>
-                <p>The company is based off of the famous novel by Dublin based author Jonathan Swift. The book includes
+                <p class="page-content">The company is based off of the famous novel by Dublin based author Jonathan Swift. The book includes
                     the traveller tales of the protagonist to a series of mystical lands, we strive to deliver a similar
                     magical experience to our customers.
-
                 </p>
             </div>
         </div>
     </section>
-
+    <!-- Footer Section -->
     <footer>
         <div id="footer-social" class="col-12">
             <h5 class="uppercase general-sub">Social</h5>
@@ -110,6 +110,7 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/carousel.js"></script>
     <script>
+        // JS code for navbar to reappear
         $(window).scroll(function () {
             if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');

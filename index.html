@@ -47,7 +47,7 @@
         </nav>
     </header>
 
-    <!-- Welcome Carosel (Bootstrap) -->
+    <!-- Welcome Carosel Images (Bootstrap) -->
     <div id="welcome-image-carosel carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -76,14 +76,15 @@
 
     <!-- Map API -->
     <section class="map-section container-fluid">
-        <!-- About me heading-->
         <div class="row">
             <div class="col-sm-12 col-lg-12">
+                <!-- Welcome heading-->
                 <h2>Where to go?</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12 col-lg-12">
+                <!-- Instructions for map-->
                 <p class="text-center">
                     Use bullet points and click on map locations for more information
                 </p>
@@ -100,17 +101,12 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <!-- Filter -->
                 <div class="row">
                     <div class="col-sm-12 col-lg-12 float-child">
                         <div class="filter">
-                            <!-- <div class="filter-heading row">
-                                    <div class="col-12">
-                                        <h3>What are you looking for?</h3>
-                                    </div>
-                                </div> -->
                             <div class="filter-checkboxes row">
                                 <div class="col-lg-4 col-sm-12">
+                                    <!-- Checkboxes Filter -->
                                     <form action="">
                                         <input type="checkbox" id="attractionRadio" name="attractionRadio">
                                         <label for="attractionRadio"> Tourist Attractions</label><br>
@@ -146,7 +142,7 @@
                                     <img id="event-image-5" class="location-image" src="">
                                 </div>
                             </div>
-
+                            <!-- Location info content -->
                             <div class="location-info" id="attraction-intro-1">
                                 <div class="row">
                                     <div class="col-12">
@@ -165,8 +161,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
                             <div class="location-info" id="attraction-intro-2">
                                 <div class="row">
                                     <div class="col-12">
@@ -467,7 +461,6 @@
                         <div class="author"><img class="rounded-circle"
                                 src="assets/images/rsz_1pexels-jc-laurio-1288171.jpg">
                             <h5 class="name">Emma Martinez</h5>
-                            <!-- <p class="title">CEO of Company Inc.</p> -->
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 item">
@@ -478,7 +471,6 @@
                         <div class="author"><img class="rounded-circle"
                                 src="assets/images/rsz_pexels-thyrone-paas-1722198.jpg">
                             <h5 class="name">Carl Kent</h5>
-                            <!-- <p class="title">Founder of Style Co.</p> -->
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 item">
@@ -489,7 +481,6 @@
                         <div class="author"><img class="rounded-circle"
                                 src="assets/images/rsz_pexels-andrea-piacquadio-3777946.jpg">
                             <h5 class="name">Ben Johnson</h5>
-                            <!-- <p class="title">Owner of Creative Ltd.</p> -->
                         </div>
                     </div>
                 </div>
@@ -544,6 +535,7 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/carousel.js"></script>
     <script>
+        // JS code for navbar to reappear
         $(window).scroll(function () {
             if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');
