@@ -66,6 +66,9 @@ a#brand, a.nav-link{
     text-align: center;
 }
 
+.navbar-toggler{
+    background-color: #F5F5F5;
+}
 /* Carousel */
 
 #carousel-item{
