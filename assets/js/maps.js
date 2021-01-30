@@ -1,79 +1,3 @@
-// function initMap() {
-//             var map = new google.maps.Map(document.getElementById("map"), {
-//                 zoom: 6, 
-//                 center: {
-//                     lat: 53.2734,
-//                     lng: -7.77832031,
-//                 }
-//             });
-
-//         var labels = "ABCBEFGHIJKLMNOPQRSTUVWXYZ";
-
-//             var locations = [{
-//                 lat: 52.9717877,
-//                 lng: -9.4291244,
-//                 content: '<h1>1</h1>'
-//             }, {
-//                 lat: 53.34193275,
-//                 lng: -6.28672974298643,
-//                 content: '<h1>2</h1>'
-//             }, {
-//                 lat: 55.24082145,
-//                 lng: -6.51163864,
-//                 content: '<h1>3</h1>'
-//             }];
-
-//             // put form action event here depending on checkbox
-//             var markers = locations.map(function(location, i) {
-//                 return new google.maps.Marker({
-//                     position: location,
-//                     label: labels[i % labels.length]
-//                 });
-//             });
-
-//             // make one for each category/color
-//             var markerCluster = new MarkerClusterer(map, markers, {
-//                 imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-//             });
-
-//         }
-
-
-// Code from medium website
-// function initMap() {
-//    var options = {
-//       zoom:6,
-//       center: { lat: 53.2734,
-//                 lng: -7.77832031} //Coordinates of Ireland
-//    }
-// var map = new google.maps.Map(document.getElementById('map'), options);
-
-// function addMarker(prop) {
-// //    var marker = new google.maps.Marker({
-// //       position: prop.coordinates, // Passing the coordinates
-// //       map:map, //Map that we need to add
-// //       draggarble: false// If set to true you can drag the marker
-// //    });
-// //    if(prop.iconImage) { marker.setIcon(prop.iconImage); }
-
-//    if(prop.content) { 
-//       var information = new google.maps.InfoWindow({
-//       content: prop.content
-//       });
-
-//       marker.addListener('click', function() {
-//       information.open(map, marker);
-//       map.setZoom(8);
-//       map.setCenter(marker.getPosition());
-//       });
-
-
-//    }
-// }
-
-
-// }
-
 // Fresh Code
 function initMap() {
     var options = {
@@ -90,33 +14,27 @@ function initMap() {
 
     document.querySelector("input[name=attractionRadio]").addEventListener('change', function () {
         if (this.checked) {
-            console.log("Checkbox is checked..");
             dropAttractions();
         }
         else {
-            console.log("Checkbox is not checked..");
             removeAttractions();
         }
     });
 
     document.querySelector("input[name=restaurantsRadio]").addEventListener('change', function () {
         if (this.checked) {
-            console.log("Checkbox is checked..");
             dropRestaurants();
         }
         else {
-            console.log("Checkbox is not checked..");
             removeRestaurants();
         }
     });
 
     document.querySelector("input[name=eventsRadio]").addEventListener('change', function () {
         if (this.checked) {
-            console.log("Checkbox is checked..");
             dropEvents();
         }
         else {
-            console.log("Checkbox is not checked..");
             removeEvents();
         }
     });
@@ -172,21 +90,6 @@ function initMap() {
                     infowindow.open(map, marker);
                 }
             })(marker, i));
-            //                                 // Option3
-            //     for (i = 0; i < attractions.length; i++) {
-            //     marker = new google.maps.Marker({
-            //         position: new google.maps.LatLng(attractions[i][0], attractions[i][1]),
-            //         map: map,
-            //         icon: attractionIcon
-            //     });
-
-            //     google.maps.event.addListener(marker, 'click', (function(marker, i) {
-            //         return function() {
-            //             map.setZoom(8);
-            //             map.setCenter(marker.getPosition());
-            //         }
-            //     })(marker, i));
-            // }
         }
     }
 
@@ -215,21 +118,6 @@ function initMap() {
                     infowindow.open(map, marker);
                 }
             })(marker, i));
-            //                         // Option3
-            //     for (i = 0; i < restaurants.length; i++) {
-            //     marker = new google.maps.Marker({
-            //         position: new google.maps.LatLng(restaurants[i][0], restaurants[i][1]),
-            //         map: map,
-            //         icon: restaurantIcon
-            //     });
-
-            //     google.maps.event.addListener(marker, 'click', (function(marker, i) {
-            //         return function() {
-            //             map.setZoom(8);
-            //             map.setCenter(marker.getPosition());
-            //         }
-            //     })(marker, i));
-            // }
         }
     }
 
@@ -283,14 +171,6 @@ function initMap() {
 }
 
 function showAttraction1() {
-    //  var x = document.getElementById("attraction1");
-    //   if (x[0].style.display === "none" && x[1].style.display === "none") {
-    //     x[0].style.display = "block";
-    //     x[1].style.display = "block";
-    //   } else {
-    //     x[0].style.display = "none";
-    //     x[1].style.display = "none"
-    //   }
     $(".location-image").css("display", "none");
     $(".location-info").css("display", "none");
     $("#attraction-image-1").toggle();
