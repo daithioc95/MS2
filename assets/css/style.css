@@ -605,6 +605,11 @@ margin-bottom: 15px;}
 }
 }
 
+.location-images{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .map-button{
     /* ref = https://stackoverflow.com/questions/1367409/how-to-make-button-look-like-a-link */
       background: none!important;
