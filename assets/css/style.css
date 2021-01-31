@@ -1,9 +1,23 @@
+:root {
+  --themeBlue: #75A2BD;
+  --themeGreen: #52C50D; 
+  --purpleShadow: #CBAEC4;
+  --welcomeText: #f2f2f2;
+  --linksWhite: #fafafa;
+  --textboxBg: #eef4f7;
+  --transparentNavbar: rgba(0,0,0,0.2);
+  --testimonialText: #313437;
+  --testimonialParagraghText: #7d8285;
+  --contactButtonHover: #5C89A4;
+  --calendarEventBorder: #164255;
+}
+
 /* Headings and paragraphs Font */
 *{
     font-family: Poppins;
 }
 h1, h2, h3, h4{
-    color: #75A2BD;
+    color: var(--themeBlue);
 }
 
 h1, h2, h3{
@@ -49,7 +63,7 @@ p{
 a#brand, a.nav-link{
     color: white;
     padding: 0;
-    text-shadow: 2px 2px 4px #CBAEC4;
+    text-shadow: 2px 2px 4px var(--purpleShadow);
     font-size: 20px;
 }
 
@@ -59,7 +73,7 @@ a#brand, a.nav-link{
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
-    color: #52C50D;
+    color: var(--themeGreen);
 }
 
 .nav-item {
@@ -67,7 +81,7 @@ a#brand, a.nav-link{
 }
 
 .navbar-toggler{
-    background-color: #F5F5F5;
+    background-color: white;
 }
 /* Carousel */
 
@@ -76,7 +90,7 @@ a#brand, a.nav-link{
 }
 
 .text {
-    color: #f2f2f2;
+    color: var(--welcomeText);
     font-size: 50px;
     padding: 8px 12px;
     position: absolute;
@@ -113,8 +127,8 @@ a#brand, a.nav-link{
     font-size: 20px;
     line-height: 15px;
     text-align: center;
-    color: #fafafa;
-    background: #75A2BD;
+    color: var(--linksWhite);
+    background: var(--themeBlue);
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -123,7 +137,7 @@ a#brand, a.nav-link{
 }
 
 .social-links li a i:hover {
-    background: #52C50D;
+    background: var(--themeGreen);
 }
 
 footer {
@@ -152,7 +166,6 @@ div#filter{
 }
 
 .float-container {
-    border: 3px solid #fff;
     padding: 20px;
 }
 
@@ -187,7 +200,7 @@ div#filter{
 }
 
 .nav div.logo a:hover {
-    color: #52C50D;
+    color: var(--themeGreen);
 }
 
 .nav div.main_list {
@@ -219,7 +232,7 @@ div#filter{
 }
 
 .nav div.main_list ul li a:hover, a#brand:hover{
-    color: #52C50D;
+    color: var(--themeGreen);
 }
 
 /* Home section */
@@ -267,9 +280,9 @@ div#filter{
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: #75A2BD;
+        background-color: var(--themeBlue);
         /*same background color of navbar*/
-        background: rgba(0,0,0,0.2);
+        background: var(--transparentNavbar);
         background-position: center top;
     }
     .nav div.main_list ul li {
@@ -427,7 +440,7 @@ div#filter{
 .affix {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #75A2BD;
+    background-color: var(--themeBlue);
     height: 65px;
     line-height: 65px;
 }
@@ -449,7 +462,7 @@ div#filter{
     }
 
     #navbarNav{
-        background-color: #75A2BD;
+        background-color: var(--themeBlue);
     }
     .nav{
         padding-top: 0; 
@@ -479,12 +492,12 @@ div#filter{
 
 /* Testimonials */
 .testimonials-clean {
-  color:#313437;
-  background-color:#eef4f7; 
+  color: var(--testimonialText);
+  background-color: var(--textboxBg); 
 }
 
 .testimonials-clean p {
-  color:#7d8285;
+  color: var(--testimonialParagraghText);
 }
 
 
@@ -522,7 +535,7 @@ div#filter{
 
 .testimonials-clean .item .box {
   padding:30px;
-  background-color:#fff;
+  background-color:white;
   position:relative;
 }
 
@@ -535,7 +548,7 @@ div#filter{
   height:0;
   border:15px solid transparent;
   border-width:12px 15px;
-  border-top-color:#fff;
+  border-top-color:white;
 }
 
 .testimonials-clean .item .author {
@@ -574,12 +587,12 @@ div#filter{
 
 /* Contact */
 .btn-info{
-    background-color: #75A2BD;
-    border-color: #75A2BD;
+    background-color: var(--themeBlue);
+    border-color: var(--themeBlue);
 }
 .btn-info:hover{
-    background-color: #5C89A4;
-    border-color: #5C89A4;
+    background-color: var(--contactButtonHover);
+    border-color: var(--contactButtonHover);
 }
 
 /* Map Filter */
@@ -629,9 +642,8 @@ margin-bottom: 15px;}
 
 /* Evo-Calendar */
 .event-title button{
-    color: #52C50D;
-    /* color: #fff; */
-    border: 1px solid #164255;
+    color: var(--themeGreen);
+    border: 1px solid var(--calendarEventBorder);
     border-radius: 15px;
     background-color: rgb(22 66 85);
 }
@@ -645,34 +657,34 @@ margin-bottom: 15px;}
 }
 
 .royal-navy .calendar-sidebar>.calendar-year{
-    background-color: #75A2BD;
+    background-color: var(--themeBlue);
 }
 
 .royal-navy .calendar-sidebar>.month-list>.calendar-months{
-    background-color: #75A2BD;
+    background-color: var(--themeBlue);
 }
 .royal-navy .calendar-events{
-    background-color: #75A2BD;
+    background-color: var(--themeBlue);
 }
 .royal-navy .calendar-sidebar{
-    background-color: #75A2BD;
+    background-color: var(--themeBlue);
 }
 .royal-navy .calendar-sidebar>.month-list{
-    background-color: #75A2BD;
+    background-color: var(--themeBlue);
 }
 
 .royal-navy #eventListToggler {
-    background-color: #52C50D;
-    -webkit-box-shadow: 0 5px 10px -3px #52C50D;
-    box-shadow: 0 5px 10px -3px #52C50D;}
+    background-color: var(--themeGreen);
+    -webkit-box-shadow: 0 5px 10px -3px var(--themeGreen);
+    box-shadow: 0 5px 10px -3px var(--themeGreen);}
 
 .royal-navy .calendar-sidebar>span#sidebarToggler {   
-    background-color: #52C50D;
-    -webkit-box-shadow: 0 5px 10px -3px #52C50D;
-    box-shadow: 0 5px 10px -3px #52C50D;}
+    background-color: var(--themeGreen);
+    -webkit-box-shadow: 0 5px 10px -3px var(--themeGreen);
+    box-shadow: 0 5px 10px -3px var(--themeGreen);}
 
 .royal-navy th[colspan="7"] {
-    color: #75A2BD;
+    color: var(--themeBlue);
 }
 
 .bars{
