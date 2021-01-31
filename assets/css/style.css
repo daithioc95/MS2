@@ -282,7 +282,7 @@ div#filter{
         bottom: 0;
         background-color: var(--themeBlue);
         /*same background color of navbar*/
-        background: var(--transparentNavbar);
+        /* background: var(--transparentNavbar); */
         background-position: center top;
     }
     .nav div.main_list ul li {
@@ -605,7 +605,8 @@ div#filter{
 }
 .location-image{width:100%;
 display: none;
-margin-bottom: 15px;}
+margin-bottom: 15px;
+border-radius: 0.5em;}
 
 @media screen and (max-width:768px) {
 .location-image{
@@ -689,4 +690,13 @@ margin-bottom: 15px;}
 
 .bars{
     margin-top: -8px;
+}
+
+@media screen and (max-width:570px) {
+.location-info{
+    background-color: var(--textboxBg);
+    border: 1px solid var(--themeBlue);
+    border-radius: 0.5em;
+    padding: 5px;
+}
 }
