@@ -73,7 +73,7 @@ function initMap() {
     const eventIcon = "http://maps.google.com/mapfiles/ms/icons/orange.png";
 
     function dropAttractions() {
-        for (i = 0; i < attractions.length; i++) {
+        for (let i = 0; i < attractions.length; i++) {
             marker = new google.maps.Marker({
                 position: new google.maps.LatLng(attractions[i][0], attractions[i][1]),
                 map: map,
@@ -101,7 +101,7 @@ function initMap() {
     }
 
     function dropRestaurants() {
-        for (i = 0; i < restaurants.length; i++) {
+        for (let i = 0; i < restaurants.length; i++) {
             marker = new google.maps.Marker({
                 position: new google.maps.LatLng(restaurants[i][0], restaurants[i][1]),
                 map: map,
@@ -129,7 +129,7 @@ function initMap() {
     }
 
     function dropEvents() {
-        for (i = 0; i < events.length; i++) {
+        for (let i = 0; i < events.length; i++) {
             marker = new google.maps.Marker({
                 position: new google.maps.LatLng(events[i][0], events[i][1]),
                 map: map,
