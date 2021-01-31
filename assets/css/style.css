@@ -600,6 +600,10 @@ div#filter{
     padding: 20px;
 }
 
+a{
+    overflow-wrap: break-word;
+}
+
 .location-info{
         display: none;
 }
