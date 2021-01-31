@@ -41,28 +41,28 @@ function initMap() {
 
 
     var attractions = [
-        [52.9717877, -9.4291244, '<button class = "map-button" onclick="showAttraction1()">Cliffs of Moher</button>'],
-        [53.34193275, -6.28672974298643, '<button class = "map-button" onclick="showAttraction2()">Guiness Storehouse</button>'],
-        [55.24082145, -6.51163864, '<button class = "map-button" onclick="showAttraction3()">Giants Causeway</button>'],
-        [53.34110865, -6.25267, '<button class = "map-button" onclick="showAttraction4()">National Gallery</button>'],
-        [53.3606275, -6.25263, '<button class = "map-button" onclick="showAttraction5()">Croke Park</button>'],
-        [53.0112891, -6.32609, '<button class = "map-button" onclick="showAttraction6()">Glendalough</button>']
+        [52.9717877, -9.4291244, '<button class = "map-button" onclick="onAttractionClicked(1)">Cliffs of Moher</button>'],
+        [53.34193275, -6.28672974298643, '<button class = "map-button" onclick="onAttractionClicked(2)">Guiness Storehouse</button>'],
+        [55.24082145, -6.51163864, '<button class = "map-button" onclick="onAttractionClicked(3)">Giants Causeway</button>'],
+        [53.34110865, -6.25267, '<button class = "map-button" onclick="onAttractionClicked(4)">National Gallery</button>'],
+        [53.3606275, -6.25263, '<button class = "map-button" onclick="onAttractionClicked(5)">Croke Park</button>'],
+        [53.0112891, -6.32609, '<button class = "map-button" onclick="onAttractionClicked(6)">Glendalough</button>']
     ];
 
     var restaurants = [
-        [53.3454622, -6.26411, '<button class = "map-button" onclick="showRestaurant1()">The Temple Bar</button>'],
-        [53.335436, -6.26351, '<button class = "map-button" onclick="showRestaurant2()">Coppers</button>'],
-        [53.33815205, -6.25418, '<button class = "map-button" onclick="showRestaurant3()">ODonoghues</button>'],
-        [54.6021395, -5.92705, '<button class = "map-button" onclick="showRestaurant4()">Harp Bar</button>'],
-        [51.9017201, -8.47109, '<button class = "map-button" onclick="showRestaurant5()">Sin é</button>']
+        [53.3454622, -6.26411, '<button class = "map-button" onclick="onRestaurantClicked(1)">The Temple Bar</button>'],
+        [53.335436, -6.26351, '<button class = "map-button" onclick="onRestaurantClicked(2)">Coppers</button>'],
+        [53.33815205, -6.25418, '<button class = "map-button" onclick="onRestaurantClicked(3)">ODonoghues</button>'],
+        [54.6021395, -5.92705, '<button class = "map-button" onclick="onRestaurantClicked(4)">Harp Bar</button>'],
+        [51.9017201, -8.47109, '<button class = "map-button" onclick="onRestaurantClicked(5)">Sin é</button>']
     ];
 
     var events = [
-        [53.69469735, -6.47555, '<button class = "map-button" onclick="showEvent1()">Newgrange</button>'],
-        [53.3528582, -6.2645, '<button class = "map-button" onclick="showEvent2()">St. Patricks Day Festival</button>'],
-        [52.33819075, -6.46211, '<button class = "map-button" onclick="showEvent3()">Wexford Opera Festival</button>'],
-        [52.0595746, -9.50532, '<button class = "map-button" onclick="showEvent4()">Ring of Kerry cycle</button>'],
-        [53.62569255, -6.88866, '<button class = "map-button" onclick="showEvent5()">Púca Halloween Festival</button>']
+        [53.69469735, -6.47555, '<button class = "map-button" onclick="onEventClicked(1)">Newgrange</button>'],
+        [53.3528582, -6.2645, '<button class = "map-button" onclick="onEventClicked(2)">St. Patricks Day Festival</button>'],
+        [52.33819075, -6.46211, '<button class = "map-button" onclick="onEventClicked(3)">Wexford Opera Festival</button>'],
+        [52.0595746, -9.50532, '<button class = "map-button" onclick="onEventClicked(4)">Ring of Kerry cycle</button>'],
+        [53.62569255, -6.88866, '<button class = "map-button" onclick="onEventClicked(5)">Púca Halloween Festival</button>']
     ];
 
 
@@ -170,108 +170,40 @@ function initMap() {
 
 }
 
-function showAttraction1() {
+// Attraction toggle function
+function onAttractionClicked(itemNumber) {
     $(".location-image").css("display", "none");
     $(".location-info").css("display", "none");
-    $("#attraction-image-1").toggle();
-    $("#attraction-intro-1").toggle();
+
+    const attractionImageId = `#attraction-image-${itemNumber}`;
+    const attractionIntroId = `#attraction-intro-${itemNumber}`;
+
+    $(attractionImageId).toggle();
+    $(attractionIntroId).toggle();
 }
 
-function showAttraction2() {
+// Restaurant toggle function
+function onRestaurantClicked(itemNumber) {
     $(".location-image").css("display", "none");
     $(".location-info").css("display", "none");
-    $("#attraction-image-2").toggle();
-    $("#attraction-intro-2").toggle();
-}
-function showAttraction3() {
-    $(".location-image").css("display", "none");
-    $(".location-info").css("display", "none");
-    $("#attraction-image-3").toggle();
-    $("#attraction-intro-3").toggle();
-}
-function showAttraction4() {
-    $(".location-image").css("display", "none");
-    $(".location-info").css("display", "none");
-    $("#attraction-image-4").toggle();
-    $("#attraction-intro-4").toggle();
-}
-function showAttraction5() {
-    $(".location-image").css("display", "none");
-    $(".location-info").css("display", "none");
-    $("#attraction-image-5").toggle();
-    $("#attraction-intro-5").toggle();
-}
-function showAttraction6() {
-    $(".location-image").css("display", "none");
-    $(".location-info").css("display", "none");
-    $("#attraction-image-6").toggle();
-    $("#attraction-intro-6").toggle();
+
+    const restaurantImageId = `#restaurant-image-${itemNumber}`;
+    const restaurantIntroId = `#restaurant-intro-${itemNumber}`;
+
+    $(restaurantImageId).toggle();
+    $(restaurantIntroId).toggle();
 }
 
-// Restaurant toggle
-function showRestaurant1() {
+// events toggler function
+function onEventClicked(itemNumber) {
     $(".location-image").css("display", "none");
     $(".location-info").css("display", "none");
-    $("#restaurant-image-1").toggle();
-    $("#restaurant-intro-1").toggle();
-}
 
-function showRestaurant2() {
-    $(".location-image").css("display", "none");
-    $(".location-info").css("display", "none");
-    $("#restaurant-image-2").toggle();
-    $("#restaurant-intro-2").toggle();
-}
-function showRestaurant3() {
-    $(".location-image").css("display", "none");
-    $(".location-info").css("display", "none");
-    $("#restaurant-image-3").toggle();
-    $("#restaurant-intro-3").toggle();
-}
-function showRestaurant4() {
-    $(".location-image").css("display", "none");
-    $(".location-info").css("display", "none");
-    $("#restaurant-image-4").toggle();
-    $("#restaurant-intro-4").toggle();
-}
-function showRestaurant5() {
-    $(".location-image").css("display", "none");
-    $(".location-info").css("display", "none");
-    $("#restaurant-image-5").toggle();
-    $("#restaurant-intro-5").toggle();
-}
+    const eventImageId = `#event-image-${itemNumber}`;
+    const eventIntroId = `#event-intro-${itemNumber}`;
 
-// events toggler
-function showEvent1() {
-    $(".location-image").css("display", "none");
-    $(".location-info").css("display", "none");
-    $("#event-image-1").toggle();
-    $("#event-intro-1").toggle();
-}
-
-function showEvent2() {
-    $(".location-image").css("display", "none");
-    $(".location-info").css("display", "none");
-    $("#event-image-2").toggle();
-    $("#event-intro-2").toggle();
-}
-function showEvent3() {
-    $(".location-image").css("display", "none");
-    $(".location-info").css("display", "none");
-    $("#event-image-3").toggle();
-    $("#event-intro-3").toggle();
-}
-function showEvent4() {
-    $(".location-image").css("display", "none");
-    $(".location-info").css("display", "none");
-    $("#event-image-4").toggle();
-    $("#event-intro-4").toggle();
-}
-function showEvent5() {
-    $(".location-image").css("display", "none");
-    $(".location-info").css("display", "none");
-    $("#event-image-5").toggle();
-    $("#event-intro-5").toggle();
+    $(eventImageId).toggle();
+    $(eventIntroId).toggle();
 }
 
 // fix toggle on button click if possible
