@@ -445,9 +445,6 @@ div#filter{
     height: 65px;
     line-height: 65px;
 }
-.affix-shadow{
-    text-shadow: none !important;
-}
 
 @media screen and (max-width:991px) {
     .navbar{
