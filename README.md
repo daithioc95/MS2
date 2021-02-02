@@ -116,7 +116,7 @@ The main technologies used are as below.
   Used to add content to the website
 - CSS
   Used to add structure and design to my site
-- Javascript
+- Javascript & jquery
   Used to create and edit interactive features such as maps, calendar, carousel and navbar 
 - CodePen
   Used for the map feature, which required a lot of trial and error. CodePen was great to instantly see how my changes effected positioning.
@@ -126,6 +126,8 @@ The main technologies used are as below.
   - Grid System: https://getbootstrap.com/docs/4.0/layout/grid/
   - Form in the contact and tours section section: https://getbootstrap.com/docs/4.0/components/forms/
   - Modal in the tours section: https://getbootstrap.com/docs/4.2/components/modal/
+- Epicbootstrap
+  - Homepage testimonial section: https://epicbootstrap.com/snippets/testimonials
 - Font Awesome
   - Font Awesome was used to input icons throughout the project. I used 4 different icons throughout the project.
 - Balsamiq
@@ -232,4 +234,31 @@ Please see below for links regarding every image used in the website.
 - Tours Welcome: https://pxhere.com/en/photo/1000001
 - Events Welcome: https://pxhere.com/en/photo/1079777
 - Contact Welcome: https://www.pexels.com/photo/white-concrete-bridge-3566191/
+
+### Acknowledgments
+- Navbar: The reappearing Navbar was achieved by editing code provided by Albi as per following link (https://codepen.io/albizan/full/mMWdWZ)
+- Maps: The 2 maps used throughout the website was used using the Google maps API.
+    - The Javascript was aquired by using the Google maps tutorials and the youtube video as per links below.
+        - https://developers.google.com/maps/documentation/javascript/
+        - https://www.youtube.com/watch?v=Zxf1mnP5zcw
+    - The checkbox drop pin code was help with thanks to the below Stackoverflow page
+        - https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
+    - The smoothzoom function was implemented which allowed for a long distant zoom to pin. The solution was achieved thanks to the below Stackoverflow page.
+        - https://stackoverflow.com/questions/4752340/how-to-zoom-in-smoothly-on-a-marker-in-google-maps
+    - Removing map pins was achieved thanks to the below post.
+        - https://intellipaat.com/community/26710/google-maps-api-v3-how-to-remove-all-markers
+- Evo-Calendar: I used a Javascript plugin called evo-calendar thanks to devloper Edlyn Villegas for usage and editing information as per below GitHub repository.
+    - https://github.com/edlynvillegas/evo-calendar
+    - In order to create a loop which would add a series of events, I used code from the below webpage.
+        - https://www.foxinfotech.in/2020/03/javascript-increment-date-by-1-day-examples.html
+    - To open the event lister for mobile device, I achieved this using code from the below webpage.
+        - https://www.tutorialrepublic.com/faq/how-to-detect-a-mobile-device-in-jquery.php
+- The testimonial section on the bottom of the homepage was achieved using help from the below webpage.
+    - https://epicbootstrap.com/snippets/testimonials
+- Inspiration to use font awesome icons with hover glow in the footer section was also from the CodeInstitutes "Mini Project".
+- Thanks to the Code Institute Tutors for helping me with problem solving.
+- Thanks to my mentor, Nishant Kumar for guidance throughout the project.
+- The form submit button message prompt was completed using JavaScript written by Mark Railton. 
+- Thanks to the Code Institute Slack channel for providing me with a wealth of information on every aspect of the project.
+
 
