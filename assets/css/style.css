@@ -97,6 +97,7 @@ a#brand, a.nav-link{
     bottom: 45%;
     width: 100%;
     text-align: center;
+    text-shadow: 2px 2px 4px black;
 }
 
 @media screen and (max-width: 570px){
