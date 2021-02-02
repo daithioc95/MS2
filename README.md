@@ -202,3 +202,34 @@ If you wish to clone this project, action the following instructions.
 5. Hit enter and the clone will be created.
 
 ## Known Bugs and Fixes
+- Evo-Calendar
+ - For mobile devices, when closing the events section on there appears to be an issue with closing. It is expected to gradually slide in however, it slides a fraction before closing abruntly. This is a known issue and I plan to fix this at a later stage.
+
+## Credits
+### Content
+All the content was written by me.
+
+### Images
+Please see below for links regarding every image used in the website.
+
+- Home Carousel 1: https://www.pexels.com/photo/photo-of-seaside-during-dawn-4055520/
+- Home Carousel 2: https://www.pexels.com/photo/body-of-water-with-rock-under-white-sky-1650829/
+- Home Carousel 3: https://pxhere.com/en/photo/485672
+- Cliffs of Mohar: https://www.pexels.com/photo/photo-of-seaside-during-dawn-4055520/
+- Guinness Storehouse: https://unsplash.com/photos/1Rfjzq1DJYM
+- Giants Causeway: https://pxhere.com/en/photo/1079780
+- National Gallery logo: https://www.nationalgallery.ie/
+- Croke Park: https://pxhere.com/en/photo/696967
+- Glendalough: https://www.pexels.com/photo/body-of-water-with-rock-under-white-sky-1650829/
+- The Temple bar: https://pxhere.com/en/photo/1186862
+- Newgrange: https://pxhere.com/en/photo/1079777
+- St. Patricks day: https://pxhere.com/en/photo/129772
+- Wexford opera festival: https://unsplash.com/photos/GYgYPW2QgLM
+- Testimonial headshot 1: https://www.pexels.com/photo/woman-taking-selfie-1288171/
+- Testimonial headshot 2: https://www.pexels.com/photo/portrait-photo-of-man-1722198/
+- Testimonial headshot 3: https://www.pexels.com/photo/man-in-red-button-up-shirt-smiling-3777946/
+- About Welcome: https://pxhere.com/en/photo/916193
+- Tours Welcome: https://pxhere.com/en/photo/1000001
+- Events Welcome: https://pxhere.com/en/photo/1079777
+- Contact Welcome: https://www.pexels.com/photo/white-concrete-bridge-3566191/
+
