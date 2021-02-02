@@ -63,7 +63,7 @@ p{
 a#brand, a.nav-link{
     color: white;
     padding: 0;
-    text-shadow: 2px 2px 4px var(--purpleShadow);
+    text-shadow: 2px 2px 4px black;
     font-size: 20px;
 }
 
@@ -458,7 +458,7 @@ div#filter{
         line-height: 50px;
     }
     a#brand, a.nav-link {
-    text-shadow: none;
+    text-shadow: 2px 2px 4px black;
     }
 
     #navbarNav{
