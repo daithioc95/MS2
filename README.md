@@ -253,7 +253,7 @@ Please see below for links regarding every image used in the website.
         - https://www.foxinfotech.in/2020/03/javascript-increment-date-by-1-day-examples.html
     - To open the event lister for mobile device, I achieved this using code from the below webpage.
         - https://www.tutorialrepublic.com/faq/how-to-detect-a-mobile-device-in-jquery.php
-- The testimonial section on the bottom of the homepage was achieved using help from the below webpage.
+- The testimonial section on the bottom of the homepage was achieved by working off the below webpage.
     - https://epicbootstrap.com/snippets/testimonials
 - Inspiration to use font awesome icons with hover glow in the footer section was also from the CodeInstitutes "Mini Project".
 - Thanks to the Code Institute Tutors for helping me with problem solving.
