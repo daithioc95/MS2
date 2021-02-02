@@ -653,6 +653,7 @@ border-radius: 0.5em;}
     border: 1px solid var(--calendarEventBorder);
     border-radius: 15px;
     background-color: rgb(22 66 85);
+    display: block;
 }
 
 @media screen and (max-width: 425px){
