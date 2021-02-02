@@ -692,6 +692,11 @@ border-radius: 0.5em;}
 
 .royal-navy th[colspan="7"] {
     color: var(--themeBlue);
+    font-weight: 400;
+}
+
+.calendar-events>.event-header>p {
+    font-weight: 400;
 }
 
 .bars{
