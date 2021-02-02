@@ -106,3 +106,99 @@ Please see below list of features present on the website
 - Interactive Map: A Google Maps API will be used to provide the visitor with information based on location. 
 - Testimonial boxes: Testimonial boxes of previous customer will be included so the visitor can get some further information from previous customers.
 - Calendar Appointment Booking System: If the customer wants to book a tour, they can check availability and book a place using the Calendar Appointment Booking System. 
+
+#### Future Features
+
+## Technologies Used
+The main technologies used are as below.
+
+- HTML
+  Used to add content to the website
+- CSS
+  Used to add structure and design to my site
+- Javascript
+  Used to create and edit interactive features such as maps, calendar, carousel and navbar 
+- CodePen
+  Used for the map feature, which required a lot of trial and error. CodePen was great to instantly see how my changes effected positioning.
+- Bootstrap
+  Used throughout the website to easily implement consistent designs, such as the below
+  - Navbar: https://getbootstrap.com/docs/4.0/components/navbar/
+  - Grid System: https://getbootstrap.com/docs/4.0/layout/grid/
+  - Form in the contact and tours section section: https://getbootstrap.com/docs/4.0/components/forms/
+  - Modal in the tours section: https://getbootstrap.com/docs/4.2/components/modal/
+- Font Awesome
+  - Font Awesome was used to input icons throughout the project. I used 4 different icons throughout the project.
+- Balsamiq
+  - Used in the design process for wireframes.
+- Pxhere, Pexels, Unsplash
+  - Used for images and design inspiration.
+- Google Fonts
+  - Used for font implementation and inspiration.
+- GitPod
+  - Used to create, commit and push the HTML and CSS changes for the website.
+- GitHub
+  - Used to deploy the website and store files and code.
+- ColorPick Eyedropper
+  - Used this google chrome extension to trail various colors apparent in my images.
+- Stackoverflow
+  - Used for problem solving to implement desired designs.
+  - Used to gain better understanding of how I should approach the implementation of elements.
+- W3Schools
+  - Used to gather a theoretical knowledge of elements and effects (in particular the button element)
+    https://www.w3schools.com/w3css/w3css_buttons.asp
+- W3 HTML Validator
+  - Used throughout  the project to ensure I was following best practices with HTML code.
+- Jigsaw CSS Validator
+  - Used throughout  the project to ensure I was following best practices with CSS code.
+
+## Testing
+### Testing User Stories
+
+### Browsers
+Tested and working consistently on the below browsers for desktop.
+- Google Chrome
+- Microsoft Edge 
+- Firefox
+
+- Mobile version manually tested throughout using google chrome on Xiaomi 8.
+
+- Tested on below screen sizes using Google Chrome developer tools.
+  - Moto G4
+  - Galaxy S5
+  - Pixel 2
+  - Pixel 2 XL
+  - iPhone 5/SE
+  - iPhone 6/7/8
+  - iPhone 6/7/8 Plus
+  - iPhone X
+  - iPad
+  - iPad Pro
+  - Surface Duo
+  - Galaxy Fold
+
+- The project passed the below validation tests.
+  - W3 HTML Validator: https://validator.w3.org/
+    
+    - <a href="" target="_blank">HTML Validator success</a>
+  - Jigsaw CSS Validator: https://validator.w3.org/
+    - <a href="" target="_blank">CSS Validator success</a>
+## Deployment
+This project was created using Gitpod for commit and push actions.
+This project was deployed using GitHub pages at https://daithioc95.github.io/MS2 as below
+
+### Deploying the project
+1. In the Github repository, navigate to the settings tab.
+2. Locate the GitHub Pages section.
+3. Change source to master and select "Save"
+4. To confirm, scroll down to the same section on the refreshed page and the "Your site is published at https://daithioc95.github.io/MS2/" will appear.
+
+### Cloning the project
+If you wish to clone this project, action the following instructions.
+
+1. On the respitory "Code" tab, select the "Code" option at the top right.
+2. Copy the URL provided in the HTTPS section.
+3. Open the GitPod (or favoured environment) terminal and change to the desired directory for the clone to be located. 
+4. Enter command "git clone" and paste the previously copied URL.
+5. Hit enter and the clone will be created.
+
+## Known Bugs and Fixes
