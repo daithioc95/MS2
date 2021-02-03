@@ -12,6 +12,7 @@
   --testimonialParagraghText: #7d8285;
   --contactButtonHover: #5C89A4;
   --calendarEventBorder: #164255;
+  --togglerColor: #F4F0E0;
 }
 
 /* Headings and paragraphs Font */
@@ -84,7 +85,7 @@ a#brand, a.nav-link{
 }
 
 .navbar-toggler{
-    background-color: white;
+    background-color: var(--togglerColor);
 }
 /* Carousel */
 
@@ -93,7 +94,7 @@ a#brand, a.nav-link{
 }
 
 .text {
-    color: var(--welcomeText);
+    color: var(--togglerColor);
     font-size: 50px;
     padding: 8px 12px;
     position: absolute;
