@@ -1,212 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        type="text/css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        type="text/css">
-    <link rel="stylesheet" href="assets/css/evo-calendar.min.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/evo-calendar.royal-navy.min.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Gulliver's travels</title>
-</head>
-
-<body>
-    <!-- Header section, includng navbar (Bootstrap) -->
-    <!-- Source: https://getbootstrap.com/docs/4.0/components/navbar/ -->
-    <header>
-        <nav class="nav navbar navbar-expand-lg navbar-light">
-            <a id="brand" class="navbar-brand" href="index.html">Gulliver's Travels</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            type="text/css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+            type="text/css">
+        <link rel="stylesheet" href="assets/css/evo-calendar.min.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/evo-calendar.royal-navy.min.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Gulliver's travels</title>
+    </head>
+    <body>
+        <!-- Header section, includng navbar (Bootstrap) -->
+        <!-- Source: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+        <header>
+            <nav class="nav navbar navbar-expand-lg navbar-light">
+                <a id="brand" class="navbar-brand" href="index.html">Gulliver's Travels</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tours.html">Tours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Tours Welcome image -->
+        <div class="welcome-image">
+            <img src="assets/images/tours_welcome_image.jpg" class="welcome-img" alt="tours welcome image">
+        </div>
+        <!-- Tours Section -->
+        <section class="about-text-section container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Tours heading -->
+                    <h2>Tours</h2>
+                    <!-- Tours content -->
+                    <p class="page-content">
+                        We currently run Dublin walking tours 4 times a week. Twice on Friday and twice on Saturday. Please
+                        see tour details below. Payments are accepted at the starting point in advance of the starting time.
+                        Please select your date and time in the calendar below and fill in the form to secure a place. Our
+                        tours are provided in English and Chinese.
+                    </p>
+                    <p class="page-content">
+                        <b>Duration:</b> 1 hr 30 mins<br>
+                        <b>Starting Point:</b> The Spire<br>
+                        <b>Price:</b> €10 <br>
+                        <b>Trail:</b> The General Post Office, The Millennium Bridge & the River Liffey, Temple Bar, Dublin
+                        Castle
+                        Christ Church Cathedral, City Hall, Trinity College<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="map-section container">
+            <!-- Tour trail Map API -->
+            <div class="row float-container">
+                <div class="col-lg-12 col-sm-12 float-child">
+                    <div id="map2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Book a tour section -->
+        <section id="book-a-tour" class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Book a Tour</h2>
+                </div>
+            </div>
+            <!-- Calendar to book tour -->
+            <div class="row calendar-container">
+                <div class="col-12">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Button to trigger modal -->
+        <button type="button" class="invisible btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        </button>
+        <!-- Bootstrap Modal  -->
+        <!-- Source: https://getbootstrap.com/docs/4.2/components/modal/ -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Book a tour</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="center-form">
+                            <form id="contact-form" method="post" enctype="text/plain">
+                                <div id="booking-name-input" class="form-group">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name"
+                                        aria-describedby="booking-name-input" required>
+                                </div>
+                                <div id="booking-email-input" class="form-group">
+                                    <input type="email" class="form-control" id="exampleFormControlInput2"
+                                        placeholder="name@example.com" aria-describedby="booking-email-input" required>
+                                </div>
+                                <div id="booking-phone-input" class="form-group">
+                                    <input id="telNo" name="telNo" type="tel" size="20" minlength="9" maxlength="14"
+                                        class="form-control" placeholder="Phone number"
+                                        aria-describedby="booking-phone-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                        placeholder="Any additional information"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-info">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Section -->
+        <footer>
+            <div id="footer-social" class="col-12">
+                <h5 class="uppercase general-sub">Social</h5>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.facebook.com/">
+                            <i class="fa fa-facebook" aria-hidden="true">
+                                <span class="sr-only">Facebook</span>
+                            </i>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="mailto:daithioc@outlook.com">
+                            <i class="fa fa-envelope" aria-hidden="true">
+                                <span class="sr-only">Email</span>
+                            </i>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tours.html">Tours</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://web.wechat.com/">
+                            <i class="fa fa-weixin" aria-hidden="true">
+                                <span class="sr-only">WeChat</span>
+                            </i>
+                        </a>
                     </li>
                 </ul>
             </div>
-        </nav>
-    </header>
-    <!-- Tours Welcome image -->
-    <div class="welcome-image">
-        <img src="assets/images/tours_welcome_image.jpg" class="welcome-img"
-            alt="tours welcome image">
-    </div>
-
-    <section class="about-text-section container-fluid">
-        <div class="row">
-            <div class="col-12">
-                 <!-- Tours heading -->
-                <h2>Tours</h2>
-                <!-- Tours content -->
-                <p class="page-content">
-                    We currently run Dublin walking tours 4 times a week. Twice on Friday and twice on Saturday. Please
-                    see tour details below. Payments are accepted at the starting point in advance of the starting time.
-                    Please select your date and time in the calendar below and fill in the form to secure a place. Our
-                    tours are provided in English and Chinese.
-                </p>
-                <p class="page-content">
-                    <b>Duration:</b> 1 hr 30 mins<br>
-                    <b>Starting Point:</b> The Spire<br>
-                    <b>Price:</b> €10 <br>
-                    <b>Trail:</b> The General Post Office, The Millennium Bridge & the River Liffey, Temple Bar, Dublin
-                    Castle
-                    Christ Church Cathedral, City Hall, Trinity College<br>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <div class="map-section container">
-        <!--Map-->
-        <div class="row float-container">
-            <div class="col-lg-12 col-sm-12 float-child">
-                <div id="map2"></div>
-            </div>
-        </div>
-    </div>
-    <!-- Book a tour section -->
-    <section id="book-a-tour" class="container">    
-        <div class="row">
-            <div class="col-12">
-                <h2>Book a Tour</h2>
-            </div>
-        </div>
-        <!-- Calendar to book tour -->
-        <div class="row calendar-container">
-            <div class="col-12">
-                <div id="calendar"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Button to trigger modal -->
-    <button type="button" class="invisible btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    </button>
-
-    <!-- Bootstrap Modal https://getbootstrap.com/docs/4.2/components/modal/-->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Book a tour</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="center-form">
-                        <form id="contact-form" method="post" enctype="text/plain">
-                            <div id="booking-name-input" class="form-group">
-                                <input type="text" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Name" aria-describedby="booking-name-input" required>
-                            </div>
-                            <div id="booking-email-input" class="form-group">
-                                <input type="email" class="form-control" id="exampleFormControlInput2"
-                                    placeholder="name@example.com" aria-describedby="booking-email-input" required>
-                            </div>
-                            <div id="booking-phone-input"  class="form-group">
-                                <input id="telNo" name="telNo" type="tel" size="20" minlength="9" maxlength="14" class="form-control" placeholder="Phone number" aria-describedby="booking-phone-input" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                    placeholder="Any additional information"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-info">Submit</button>
-                        </form>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div id="footer-social" class="col-12">
-            <h5 class="uppercase general-sub">Social</h5>
-            <ul class="list-inline social-links">
-                <li class="list-inline-item">
-                    <a target="_blank" href="https://www.facebook.com/">
-                        <i class="fa fa-facebook" aria-hidden="true">
-                            <span class="sr-only">Facebook</span>
-                        </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a target="_blank" href="mailto:daithioc@outlook.com">
-                        <i class="fa fa-envelope" aria-hidden="true">
-                            <span class="sr-only">Email</span>
-                        </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a target="_blank" href="https://web.wechat.com/">
-                        <i class="fa fa-weixin" aria-hidden="true">
-                            <span class="sr-only">WeChat</span>
-                        </i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-
-    <script
-        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script src="assets/js/maps2.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADq66twskCpg_SQwgjmY4o9SgnKue0wLE&callback=initMap"></script>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="assets/js/evo-calendar.min.js"></script>
-    <script src="assets/js/carousel.js"></script>
-    <script src="assets/js/calendar.js"></script>
-    <script>
-        // JS code for navbar to reappear on scroll 
-        // Source: https://codepen.io/albizan/full/mMWdWZ
-        $(window).scroll(function () {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-        // JS code to promt user on form submit
-        $("#contact-form").on("submit", function (event) {
-            event.preventDefault();
-            alert("This is a dummy form and will not be submitted, thanks");
-        });
-    </script>
-</body>
-
+        </footer>
+        <script
+            src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="assets/js/maps2.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADq66twskCpg_SQwgjmY4o9SgnKue0wLE&callback=initMap"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="assets/js/evo-calendar.min.js"></script>
+        <script src="assets/js/carousel.js"></script>
+        <script src="assets/js/calendar.js"></script>
+        <script>
+            // JS code for navbar to reappear on scroll 
+            // Source: https://codepen.io/albizan/full/mMWdWZ
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+            // JS code to promt user on form submit
+            $("#contact-form").on("submit", function (event) {
+                event.preventDefault();
+                alert("This is a dummy form and will not be submitted, thanks");
+            });
+        </script>
+    </body>
 </html>
