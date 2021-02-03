@@ -20,6 +20,7 @@
 
 <body>
     <!-- Header section, includng navbar (Bootstrap) -->
+    <!-- Source: https://getbootstrap.com/docs/4.0/components/navbar/ -->
     <header>
         <nav class="nav navbar navbar-expand-lg navbar-light">
             <a id="brand" class="navbar-brand" href="index.html">Gulliver's Travels</a>
@@ -191,7 +192,8 @@
     <script src="assets/js/carousel.js"></script>
     <script src="assets/js/calendar.js"></script>
     <script>
-        // JS code for navbar to reappear
+        // JS code for navbar to reappear on scroll 
+        // Source: https://codepen.io/albizan/full/mMWdWZ
         $(window).scroll(function () {
             if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');

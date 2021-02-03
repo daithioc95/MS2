@@ -123,6 +123,7 @@ The main technologies used are as below.
 - Bootstrap
   Used throughout the website to easily implement consistent designs, such as the below
   - Navbar: https://getbootstrap.com/docs/4.0/components/navbar/
+  - Carousel: https://getbootstrap.com/docs/4.0/components/carousel/
   - Grid System: https://getbootstrap.com/docs/4.0/layout/grid/
   - Form in the contact and tours section: https://getbootstrap.com/docs/4.0/components/forms/
   - Modal in the tours section: https://getbootstrap.com/docs/4.2/components/modal/
