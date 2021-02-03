@@ -155,6 +155,50 @@ The main technologies used are as below.
 
 ## Testing
 ### Testing User Stories
+#### As a potential customer, I want to find travel information on Ireland, so that I can identify if it is a suitable holiday destination for me.
+- The home page map section provides information on Ireland based on type of destination, Tourist Attractions, Restaurants/Bars or Events. 
+<img src="assets/images/user_story_testing/home_page_map.PNG">
+
+-Upon selection of the pin location information is provided relating to that destination. Information will appear so that the user can decide if Ireland is a suitable destination based on their interests in these locations.
+- Should the user require more information, they can select the link below in the information which will lead them to an external page where they can find more information.
+<img src="assets/images/user_story_testing/home_page_map_selection.PNG">
+
+- The Events section provides information on events which occur in Ireland throughout the year.
+- The user can find travel information related to Ireland based on these events and if they require more information, they can select the link provided which will lead them to an external page where they can find more information.
+<img src="assets/images/user_story_testing/events.PNG">
+
+#### As a potential customer, I want to find information on the company’s tours, so that I can decide if the tours are suitable to me.
+- The user can find information relating to the tours by navigating to the 'tours' page.
+- The user is provided with information such as frequency, duration, starting point and trial of the tour.
+- Below this information, there is also a map including markers relating to each location on the tour so the user can get a visual overview of the tour.
+<img src="assets/images/user_story_testing/tours.PNG">
+
+#### As a potential customer, I want to check availability of tours, so that I can identify if the options are feasible for me.
+- The user can find this information by scrolling to the end of the tours page.
+- They will see a Calendar with a red and yellow dot relating to dates where availability of tour places can be found.
+<img src="assets/images/user_story_testing/tours_calendar.PNG">
+
+- For dates where no tours are available, they will see "No tours available for this day" in the event column on the right hand side.
+<img src="assets/images/user_story_testing/tours_calendar_unavailable.PNG">
+
+- When they select the desired date, the option between a morning tour or noon tour will be provided.
+<img src="assets/images/user_story_testing/tours_calendar_available.PNG">
+
+#### As a potential customer, I want to book a tour, so that I can guarantee my place on the tour.
+- User can book a place and guarantee their place on a tour by navigating to the calendar and the bottom of the tours page.
+- When the desired date with availability is selected, they can choose between the "Morning Tour 9.00" or the "Noon Tour 12.00".
+<img src="assets/images/user_story_testing/tours_calendar_available.PNG">
+
+- When the desired elevent is selected a form pop up will appear where the user can input relevant information.
+<img src="assets/images/user_story_testing/tours_calendar_form.PNG">
+- The user can enter their name, email and phone number along with optional additional information before selecting the Submit button which will guarantee their place.
+<img src="assets/images/user_story_testing/tours_calendar_form_info.PNG">
+
+#### As a potential customer, I want to contact the company, so that I can provide feedback or ask any unanswered questions.
+- The user can contact the compant for any further information by navigating the the contact page.
+<img src="assets/images/user_story_testing/contact.PNG">
+- The user can then scroll down to the "Want to contact us?" form where they can enter their name, emails and query which will be routed to the company.
+<img src="assets/images/user_story_testing/contact_info.PNG">
 
 ### Browsers
 Tested and working consistently on the below browsers for desktop.
