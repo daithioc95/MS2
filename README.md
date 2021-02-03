@@ -15,7 +15,7 @@ When designing this website, I followed the 5 levels of development, a well know
 #### Project Objectives
 - Showcase the developer’s frontend development skills.
 - Provide travel information on Ireland to the audience.
-- Provide information specific to the companies tours for the visitor
+- Provide information specific to the company's tours for the visitor
 - Regarding tours, provide the audience with the ability to check availability and book a tour.
 - Allow the audience to interact with the website to collect information in an aesthetically pleasing manner.
 - Provide a means of contact for the visitor should they want to reach out to the company directly.
@@ -50,8 +50,8 @@ The second phase will be added at a later stage due to time and content capacity
 ### Structure Plane
 - Navbar: The Navbar is a green colour to ensure the green brand image of Ireland is communicated to the visitor.
 - Header: The Navbar colour is used as the header font color throughout.
-- Backgroud: The background will consist of background images with a level of transparency applied.
-- FontAwesome: Font Awesome Icons were used throughout the website to provide more information links.
+- Background: The background will consist of background images with a level of transparency applied.
+- Font Awesome: Font Awesome Icons were used throughout the website to provide more information links.
 
 ### Skeleton Plane
 Once the sections and layout has been identified as in the previous planes we can get started with the Skeleton Plane.
@@ -116,7 +116,7 @@ The main technologies used are as below.
   Used to add content to the website
 - CSS
   Used to add structure and design to my site
-- Javascript & jquery
+- JavaScript & jQuery
   Used to create and edit interactive features such as maps, calendar, carousel and navbar 
 - CodePen
   Used for the map feature, which required a lot of trial and error. CodePen was great to instantly see how my changes effected positioning.
@@ -124,7 +124,7 @@ The main technologies used are as below.
   Used throughout the website to easily implement consistent designs, such as the below
   - Navbar: https://getbootstrap.com/docs/4.0/components/navbar/
   - Grid System: https://getbootstrap.com/docs/4.0/layout/grid/
-  - Form in the contact and tours section section: https://getbootstrap.com/docs/4.0/components/forms/
+  - Form in the contact and tours section: https://getbootstrap.com/docs/4.0/components/forms/
   - Modal in the tours section: https://getbootstrap.com/docs/4.2/components/modal/
 - Epicbootstrap
   - Homepage testimonial section: https://epicbootstrap.com/snippets/testimonials
@@ -176,12 +176,10 @@ The main technologies used are as below.
 #### As a potential customer, I want to check availability of tours, so that I can identify if the options are feasible for me.
 - The user can find this information by scrolling to the end of the tours page.
 - They will see a Calendar with a red and yellow dot relating to dates where availability of tour places can be found.
+- For dates where no tours are available, they will see "No tours available for this day" in the event column on the right-hand side.
 <img src="assets/images/user_story_testing/tours_calendar.PNG">
 
-- For dates where no tours are available, they will see "No tours available for this day" in the event column on the right hand side.
-<img src="assets/images/user_story_testing/tours_calendar_unavailable.PNG">
-
-- When they select the desired date, the option between a morning tour or noon tour will be provided.
+- When they select the desired available date, the option between a morning tour or noon tour will be provided in the event column on the right-hand side.
 <img src="assets/images/user_story_testing/tours_calendar_available.PNG">
 
 #### As a potential customer, I want to book a tour, so that I can guarantee my place on the tour.
@@ -189,13 +187,13 @@ The main technologies used are as below.
 - When the desired date with availability is selected, they can choose between the "Morning Tour 9.00" or the "Noon Tour 12.00".
 <img src="assets/images/user_story_testing/tours_calendar_available.PNG">
 
-- When the desired elevent is selected a form pop up will appear where the user can input relevant information.
+- When the desired event is selected a form pop up will appear where the user can input relevant information.
 <img src="assets/images/user_story_testing/tours_calendar_form.PNG">
 - The user can enter their name, email and phone number along with optional additional information before selecting the Submit button which will guarantee their place.
 <img src="assets/images/user_story_testing/tours_calendar_form_info.PNG">
 
 #### As a potential customer, I want to contact the company, so that I can provide feedback or ask any unanswered questions.
-- The user can contact the compant for any further information by navigating the the contact page.
+- The user can contact the company for any further information by navigating the contact page.
 <img src="assets/images/user_story_testing/contact.PNG">
 - The user can then scroll down to the "Want to contact us?" form where they can enter their name, emails and query which will be routed to the company.
 <img src="assets/images/user_story_testing/contact_info.PNG">
@@ -229,11 +227,11 @@ Tested and working consistently on the below browsers for desktop.
   - Jigsaw CSS Validator: https://validator.w3.org/
     - <a href="" target="_blank">CSS Validator success</a>
 ## Deployment
-This project was created using Gitpod for commit and push actions.
+This project was created using GitPod for commit and push actions.
 This project was deployed using GitHub pages at https://daithioc95.github.io/MS2 as below
 
 ### Deploying the project
-1. In the Github repository, navigate to the settings tab.
+1. In the GitHub repository, navigate to the settings tab.
 2. Locate the GitHub Pages section.
 3. Change source to master and select "Save"
 4. To confirm, scroll down to the same section on the refreshed page and the "Your site is published at https://daithioc95.github.io/MS2/" will appear.
@@ -241,7 +239,7 @@ This project was deployed using GitHub pages at https://daithioc95.github.io/MS2
 ### Cloning the project
 If you wish to clone this project, action the following instructions.
 
-1. On the respitory "Code" tab, select the "Code" option at the top right.
+1. On the repository "Code" tab, select the "Code" option at the top right.
 2. Copy the URL provided in the HTTPS section.
 3. Open the GitPod (or favoured environment) terminal and change to the desired directory for the clone to be located. 
 4. Enter command "git clone" and paste the previously copied URL.
@@ -249,7 +247,7 @@ If you wish to clone this project, action the following instructions.
 
 ## Known Bugs and Fixes
 - Evo-Calendar
- - For mobile devices, when closing the events section on there appears to be an issue with closing. It is expected to gradually slide in however, it slides a fraction before closing abruntly. This is a known issue and I plan to fix this at a later stage.
+ - For mobile devices, when closing the events section on there appears to be an issue with closing. It is expected to gradually slide in however, it slides a fraction before closing abruptly. This is a known issue and I plan to fix this at a later stage.
 
 ## Credits
 ### Content
@@ -282,7 +280,7 @@ Please see below for links regarding every image used in the website.
 ### Acknowledgments
 - Navbar: The reappearing Navbar was achieved by editing code provided by Albi as per following link (https://codepen.io/albizan/full/mMWdWZ)
 - Maps: The 2 maps used throughout the website was used using the Google maps API.
-    - The Javascript was aquired by using the Google maps tutorials and the youtube video as per links below.
+    - The JavaScript was acquired by using the Google maps tutorials and the YouTube video as per links below.
         - https://developers.google.com/maps/documentation/javascript/
         - https://www.youtube.com/watch?v=Zxf1mnP5zcw
     - The checkbox drop pin code was help with thanks to the below Stackoverflow page
@@ -291,7 +289,7 @@ Please see below for links regarding every image used in the website.
         - https://stackoverflow.com/questions/4752340/how-to-zoom-in-smoothly-on-a-marker-in-google-maps
     - Removing map pins was achieved thanks to the below post.
         - https://intellipaat.com/community/26710/google-maps-api-v3-how-to-remove-all-markers
-- Evo-Calendar: I used a Javascript plugin called evo-calendar thanks to devloper Edlyn Villegas for usage and editing information as per below GitHub repository.
+- Evo-Calendar: I used a JavaScript plugin called evo-calendar thanks to developer Edlyn Villegas for usage and editing information as per below GitHub repository.
     - https://github.com/edlynvillegas/evo-calendar
     - In order to create a loop which would add a series of events, I used code from the below webpage.
         - https://www.foxinfotech.in/2020/03/javascript-increment-date-by-1-day-examples.html
