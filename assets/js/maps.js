@@ -1,4 +1,6 @@
-// Fresh Code
+// Code to initialize map
+// Source: https://developers.google.com/maps/documentation/javascript/maptypes
+
 function initMap() {
     var options = {
         zoom: 6,
@@ -7,11 +9,14 @@ function initMap() {
             lng: -7.77832031
         } //Coordinates of Ireland
     }
+    // implementing markers
     var map = new google.maps.Map(document.getElementById('map'), options);
     var attractionMarkers = [];
     var restaurantsMarkers = [];
     var eventsMarkers = [];
 
+    // Trigger function on checkbox
+    // Source: https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
     document.querySelector("input[name=attractionRadio]").addEventListener('change', function () {
         if (this.checked) {
             dropAttractions();
@@ -39,7 +44,7 @@ function initMap() {
         }
     });
 
-
+    // Array of attractions information
     var attractions = [
         [52.9717877, -9.4291244, '<button class = "map-button" onclick="onAttractionClicked(1)">Cliffs of Moher</button>'],
         [53.34193275, -6.28672974298643, '<button class = "map-button" onclick="onAttractionClicked(2)">Guiness Storehouse</button>'],
@@ -49,6 +54,7 @@ function initMap() {
         [53.0112891, -6.32609, '<button class = "map-button" onclick="onAttractionClicked(6)">Glendalough</button>']
     ];
 
+    // Array of restaurants information
     var restaurants = [
         [53.3454622, -6.26411, '<button class = "map-button" onclick="onRestaurantClicked(1)">The Temple Bar</button>'],
         [53.335436, -6.26351, '<button class = "map-button" onclick="onRestaurantClicked(2)">Coppers</button>'],
@@ -57,6 +63,7 @@ function initMap() {
         [51.9017201, -8.47109, '<button class = "map-button" onclick="onRestaurantClicked(5)">Sin é</button>']
     ];
 
+    // Array of events information
     var events = [
         [53.69469735, -6.47555, '<button class = "map-button" onclick="onEventClicked(1)">Newgrange</button>'],
         [53.3528582, -6.2645, '<button class = "map-button" onclick="onEventClicked(2)">St. Patricks Day Festival</button>'],
@@ -65,12 +72,15 @@ function initMap() {
         [53.62569255, -6.88866, '<button class = "map-button" onclick="onEventClicked(5)">Púca Halloween Festival</button>']
     ];
 
-
+    // initializing variables to drop markers
     var marker, i;
     var infowindow = new google.maps.InfoWindow();
     const attractionIcon = "http://maps.google.com/mapfiles/ms/icons/green.png";
     const restaurantIcon = "http://maps.google.com/mapfiles/ms/icons/grey.png";
     const eventIcon = "http://maps.google.com/mapfiles/ms/icons/orange.png";
+
+    // Function to drop attraction markers
+    // Source: https://developers.google.com/maps/documentation/javascript/markers
 
     function dropAttractions() {
         for (let i = 0; i < attractions.length; i++) {
@@ -92,6 +102,8 @@ function initMap() {
             })(marker, i));
         }
     }
+    // Function to remove attraction markers
+    // Source: https://intellipaat.com/community/26710/google-maps-api-v3-how-to-remove-all-markers
 
     function removeAttractions() {
         for (i = 0; i < attractionMarkers.length; i++) {
@@ -100,6 +112,7 @@ function initMap() {
         attractionMarkers.length = 0;
     }
 
+    // Function to drop restaurant markers
     function dropRestaurants() {
         for (let i = 0; i < restaurants.length; i++) {
             marker = new google.maps.Marker({
@@ -121,6 +134,7 @@ function initMap() {
         }
     }
 
+    // Function to remove restaurant markers
     function removeRestaurants() {
         for (i = 0; i < restaurantsMarkers.length; i++) {
             restaurantsMarkers[i].setMap(null);
@@ -128,6 +142,7 @@ function initMap() {
         restaurantsMarkers.length = 0;
     }
 
+    // Function to drop event markers
     function dropEvents() {
         for (let i = 0; i < events.length; i++) {
             marker = new google.maps.Marker({
@@ -149,12 +164,16 @@ function initMap() {
         }
     }
 
+    // Function to remove event markers
     function removeEvents() {
         for (i = 0; i < eventsMarkers.length; i++) {
             eventsMarkers[i].setMap(null);
         }
         eventsMarkers.length = 0;
     }
+
+    // Function to zoom in smoothly from a far distance
+    // Source: https://stackoverflow.com/questions/4752340/how-to-zoom-in-smoothly-on-a-marker-in-google-maps
     function smoothZoom(map, max, cnt) {
         if (cnt >= max) {
             return;
@@ -164,13 +183,12 @@ function initMap() {
                 google.maps.event.removeListener(z);
                 smoothZoom(map, max, cnt + 1);
             });
-            setTimeout(function () { map.setZoom(cnt) }, 80); // 80ms is what I found to work well on my system -- it might not work well on all systems
+            setTimeout(function () { map.setZoom(cnt) }, 80);
         }
     }
-
 }
 
-// Attraction toggle function
+// Attraction  toggle function
 function onAttractionClicked(itemNumber) {
     $(".location-image").css("display", "none");
     $(".location-info").css("display", "none");
@@ -182,7 +200,7 @@ function onAttractionClicked(itemNumber) {
     $(attractionIntroId).toggle();
 }
 
-// Restaurant toggle function
+// Restaurant display toggle function
 function onRestaurantClicked(itemNumber) {
     $(".location-image").css("display", "none");
     $(".location-info").css("display", "none");
@@ -194,7 +212,7 @@ function onRestaurantClicked(itemNumber) {
     $(restaurantIntroId).toggle();
 }
 
-// events toggler function
+// events display toggler function
 function onEventClicked(itemNumber) {
     $(".location-image").css("display", "none");
     $(".location-info").css("display", "none");
@@ -205,6 +223,3 @@ function onEventClicked(itemNumber) {
     $(eventImageId).toggle();
     $(eventIntroId).toggle();
 }
-
-// fix toggle on button click if possible
-
