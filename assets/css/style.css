@@ -45,6 +45,7 @@ p{
 .page-content p{
     line-height: 26pt;
 }
+
 /* Reduce paragraph and headings with for mobile devices */
 @media screen and (max-width:570px) {
     p{
@@ -64,7 +65,7 @@ p{
     }
 }
 
-/* ------------Navbar------------ */
+/* ------------Navbar section------------ */
 
 a#brand, a.nav-link{
     color: white;
@@ -89,7 +90,8 @@ a#brand, a.nav-link{
 .navbar-toggler{
     background-color: var(--togglerColor);
 }
-/* Navbar section */
+/* Navbar Reappear */
+/* Source: https://codepen.io/albizan/pen/mMWdWZ */
 
 .nav {
     width: 100%;
@@ -98,6 +100,10 @@ a#brand, a.nav-link{
     line-height: 100px;
     text-align: center;
     z-index: 1030;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .nav div.logo {
@@ -109,7 +115,6 @@ a#brand, a.nav-link{
 
 .nav div.logo a {
     text-decoration: none;
-    color: red;
     font-size: 2.5rem;
 }
 
@@ -140,7 +145,6 @@ a#brand, a.nav-link{
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: red;
     line-height: 65px;
     font-size: 2.4rem;
 }
@@ -148,123 +152,11 @@ a#brand, a.nav-link{
 .nav div.main_list ul li a:hover, a#brand:hover{
     color: var(--themeGreen);
 }
-/* ------------Carousel------------ */
-
-#carousel-item{
-    width: 100%;
-}
-
-.text {
-    color: var(--togglerColor);
-    font-size: 50px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 45%;
-    width: 100%;
-    text-align: center;
-    text-shadow: 2px 2px 4px black;
-    font-style: italic; 
-}
-/* Reduce bottom border for better positioning on mobile devices */
-@media screen and (max-width: 570px){
-.text {
-    bottom: 30% !important;
-}
-}
-
-/*------------ Footer------------ */
-
-#footer-social {
-    text-align: center;
-}
-
-.list-inline.social-links {
-    margin-bottom: 0;
-}
-
-.social-links {
-    padding-bottom: 15px;
-}
-
-.social-links li a i {
-    width: 40px;
-    height: 40px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 20px;
-    line-height: 15px;
-    text-align: center;
-    color: var(--linksWhite);
-    background: var(--themeBlue);
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-    margin: 20px 20px 15px 20px;
-}
-
-.social-links li a i:hover {
-    background: var(--themeGreen);
-}
-
-footer {
-    background-color: white;
-    padding: 25px;
-}
-
-/* Google Maps API */
-
-div#map {
-    min-height: 360px;
-}
-
-@media screen and (min-width:570px) {
-div#map {
-    min-height: 400px;
-}}
-
-div#map2 {
-    min-height: 360px;
-}
-
-div#filter{
-    min-height: 360px;
-    border: 5px solid black;
-}
-
-.float-container {
-    padding: 20px;
-}
-
-.float-child {
-    width: 100%;
-    float: left;
-    padding: 0px;
-}  
-
-.navTrigger {
-    display: none;
-}
-
-.nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-}
-
-/* Media qurey section */
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        margin: 0;
-    }
-}
 
 @media screen and (max-width:768px) {
-    .navTrigger {
+    /* .navTrigger {
         display: block;
-    }
+    } */
     .nav div.logo {
         margin-left: 15px;
     }
@@ -285,8 +177,6 @@ div#filter{
         left: 0;
         bottom: 0;
         background-color: var(--themeBlue);
-        /*same background color of navbar*/
-        /* background: var(--transparentNavbar); */
         background-position: center top;
     }
     .nav div.main_list ul li {
@@ -303,12 +193,6 @@ div#filter{
         display: block;
     }
 }
-
-
-/* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
-
-
 @-webkit-keyframes inM {
     50% {
         -webkit-transform: rotate(0deg);
@@ -441,6 +325,7 @@ div#filter{
     }
 }
 
+/* class implemented on scroll */
 .affix {
     padding-top: 0;
     padding-bottom: 0;
@@ -468,6 +353,109 @@ div#filter{
     .nav{
         padding-top: 0; 
         padding-bottom: 0;
+    }
+}
+/* ------------Carousel------------ */
+
+#carousel-item{
+    width: 100%;
+}
+
+/* Welcome text */
+.text {
+    color: var(--togglerColor);
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 45%;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    font-style: italic; 
+}
+
+/* Reduce bottom border for better positioning on mobile devices */
+@media screen and (max-width: 570px){
+.text {
+    bottom: 30% !important;
+}
+}
+
+/*------------ Footer------------ */
+
+#footer-social {
+    text-align: center;
+}
+
+.list-inline.social-links {
+    margin-bottom: 0;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 40px;
+    height: 40px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 15px;
+    text-align: center;
+    color: var(--linksWhite);
+    background: var(--themeBlue);
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    margin: 20px 20px 15px 20px;
+}
+
+.social-links li a i:hover {
+    background: var(--themeGreen);
+}
+
+footer {
+    background-color: white;
+    padding: 25px;
+}
+
+/* Google Maps API */
+
+div#map {
+    min-height: 360px;
+}
+
+@media screen and (min-width:570px) {
+div#map {
+    min-height: 400px;
+}}
+
+div#map2 {
+    min-height: 360px;
+}
+
+div#filter{
+    min-height: 360px;
+    border: 5px solid black;
+}
+
+.float-container {
+    padding: 20px;
+}
+
+.float-child {
+    width: 100%;
+    float: left;
+    padding: 0px;
+}  
+
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
     }
 }
 
