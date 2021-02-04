@@ -18,6 +18,7 @@
 }
 
 /* ------------Fonts------------ */
+
 *{
     font-family: 'Lora', serif;
 }
@@ -112,9 +113,9 @@ a#brand, a.nav-link{
         padding-bottom: 0;
     }
 }
+
 /* Navbar Reappear */
 /* Source: https://codepen.io/albizan/pen/mMWdWZ */
-
 .nav {
     width: 100%;
     height: 100px;
@@ -279,6 +280,26 @@ a#brand:hover{
     width: 100%;
 }
 
+@media screen and (max-width:570px) {
+    .carousel-image{
+        width: auto !important;
+        height: calc(100vh - 50px);
+        background-position: center !important;}
+    .text{
+        bottom: 0px;
+    }
+}
+
+@media screen and (min-width:570px) {
+    .carousel-image{
+        width: 100% !important;
+    }
+}
+
+.carousel-image{
+    margin-bottom: 10px;
+}
+
 /* Welcome text */
 .text {
     color: var(--togglerColor);
@@ -294,9 +315,9 @@ a#brand:hover{
 
 /* Reduce bottom border for better positioning on mobile devices */
 @media screen and (max-width: 570px){
-.text {
-    bottom: 30% !important;
-}
+    .text {
+        bottom: 30% !important;
+    }
 }
 
 /*------------ Footer------------ */
@@ -346,9 +367,10 @@ div#map {
 }
 
 @media screen and (min-width:570px) {
-div#map {
-    min-height: 400px;
-}}
+    div#map {
+        min-height: 400px;
+    }
+}
 
 div#map2 {
     min-height: 360px;
@@ -369,122 +391,104 @@ div#filter{
     padding: 0px;
 }  
 
-/* Media qurey section */
-
+/* Mobile container positioning setting */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container {
         margin: 0;
     }
 }
 
-@media screen and (max-width:570px) {
-    .carousel-image{
-        width: auto !important;
-        height: calc(100vh - 50px);
-  background-position: center !important;}
-  .text{
-    bottom: 0px;
-  }
-}
-
-@media screen and (min-width:570px) {
-.carousel-image{
-    width: 100% !important;
-}}
-
-.carousel-image{
-    margin-bottom: 10px;
-}
-
 /* ------------Testimonials------------ */
 /* Source: https://epicbootstrap.com/snippets/testimonials */
+
 .testimonials-clean {
-  color: var(--testimonialText);
-  background-color: var(--textboxBg); 
+    color: var(--testimonialText);
+    background-color: var(--textboxBg); 
 }
 
 .testimonials-clean p {
-  color: var(--testimonialParagraghText);
+    color: var(--testimonialParagraghText);
 }
 
 @media (max-width:767px) {
-  .testimonials-clean h2 {
-    margin-bottom:25px;
-    padding-top:25px;
-    font-size:24px;
-  }
+    .testimonials-clean h2 {
+        margin-bottom:25px;
+        padding-top:25px;
+        font-size:24px;
+    }
 }
 
 .testimonials-clean .intro {
-  font-size:16px;
-  max-width:500px;
-  margin:0 auto;
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto;
 }
 
 .testimonials-clean .intro p {
-  margin-bottom:0;
+    margin-bottom:0;
 }
 
 .testimonials-clean .people {
-  padding:50px 0 20px;
+    padding:50px 0 20px;
 }
 
 .testimonials-clean .item {
-  margin-bottom:32px;
+    margin-bottom:32px;
 }
 
 @media (min-width:768px) {
-  .testimonials-clean .item {
-    height:220px;
-  }
+    .testimonials-clean .item {
+        height:220px;
+    }
 }
 
 .testimonials-clean .item .box {
-  padding:30px;
-  background-color:white;
-  position:relative;
+    padding:30px;
+    background-color:white;
+    position:relative;
 }
 
 .testimonials-clean .item .box:after {
-  content:'';
-  position:absolute;
-  left:30px;
-  bottom:-24px;
-  width:0;
-  height:0;
-  border:15px solid transparent;
-  border-width:12px 15px;
-  border-top-color:white;
+    content:'';
+    position:absolute;
+    left:30px;
+    bottom:-24px;
+    width:0;
+    height:0;
+    border:15px solid transparent;
+    border-width:12px 15px;
+    border-top-color:white;
 }
 
 .testimonials-clean .item .author {
-  margin-top:28px;
-  padding-left:25px;
+    margin-top:28px;
+    padding-left:25px;
 }
 
 .testimonials-clean .item .name {
-  font-weight:bold;
-  margin-bottom:2px;
-  color:inherit;
+    font-weight:bold;
+    margin-bottom:2px;
+    color:inherit;
 }
 
 .testimonials-clean .item .title {
-  font-size:13px;
+    font-size:13px;
 }
 
 .testimonials-clean .item .description {
-  font-size:15px;
-  margin-bottom:0;
+    font-size:15px;
+    margin-bottom:0;
 }
 
 .testimonials-clean .item img {
-  max-width:40px;
-  float:left;
-  margin-right:12px;
-  margin-top:-5px;
+    max-width:40px;
+    float:left;
+    margin-right:12px;
+    margin-top:-5px;
 }
 
 /* ------------Welcome Image------------ */
+
 .welcome-img {
     width: 100%;
     height: auto;
@@ -492,26 +496,31 @@ div#filter{
 }
 
 /* ------------Contact------------ */
+
 .btn-info{
     background-color: var(--themeBlue);
     border-color: var(--themeBlue);
 }
+
 .btn-info:hover{
     background-color: var(--contactButtonHover);
     border-color: var(--contactButtonHover);
 }
 
 /* ------------Location info based off of map------------ */
+
 .filter{
     padding: 20px;
 }
+
 /* to ensure url doesn't overflow beyond textbox */
 a{
     overflow-wrap: break-word;
 }
 
+/* updated using JS on button click */
 .location-info{
-        display: none;
+    display: none;
 }
 
 .location-image{
@@ -522,14 +531,14 @@ a{
 }
 
 @media screen and (max-width:768px) {
-.location-image{
-    margin-left: auto;
-    margin-right: auto;
-}
-.filter-checkboxes{
-    margin-left: auto;
-    margin-right: auto;
-}
+    .location-image{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .filter-checkboxes{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .location-images{
@@ -537,20 +546,8 @@ a{
     padding-right: 0px;
 }
 
-/* .map-button{ */
-    /* ref = https://stackoverflow.com/questions/1367409/how-to-make-button-look-like-a-link */
-      /* background: none!important;
-  border: none;
-  padding: 0!important; */
-  /*optional*/
-  /* font-family: arial, sans-serif; */
-  /*input has OS specific font-family*/
-  /* color: #069;
-  text-decoration: underline;
-  cursor: pointer;
-} */
-
 /* ------------Evo-Calendar------------ */
+
 .event-title button{
     color: var(--themeGreen);
     border: 1px solid var(--calendarEventBorder);
@@ -561,10 +558,11 @@ a{
 
 @media screen and (max-width: 425px){
     .calendar-events {
-    height: 200%;
-   -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;}
+        height: 200%;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
 }
 
 .royal-navy .calendar-sidebar>.calendar-year{
@@ -574,12 +572,15 @@ a{
 .royal-navy .calendar-sidebar>.month-list>.calendar-months{
     background-color: var(--themeBlue);
 }
+
 .royal-navy .calendar-events{
     background-color: var(--themeBlue);
 }
+
 .royal-navy .calendar-sidebar{
     background-color: var(--themeBlue);
 }
+
 .royal-navy .calendar-sidebar>.month-list{
     background-color: var(--themeBlue);
 }
@@ -587,12 +588,14 @@ a{
 .royal-navy #eventListToggler {
     background-color: var(--themeGreen);
     -webkit-box-shadow: 0 5px 10px -3px var(--themeGreen);
-    box-shadow: 0 5px 10px -3px var(--themeGreen);}
+    box-shadow: 0 5px 10px -3px var(--themeGreen);
+}
 
 .royal-navy .calendar-sidebar>span#sidebarToggler {   
     background-color: var(--themeGreen);
     -webkit-box-shadow: 0 5px 10px -3px var(--themeGreen);
-    box-shadow: 0 5px 10px -3px var(--themeGreen);}
+    box-shadow: 0 5px 10px -3px var(--themeGreen);
+}
 
 .royal-navy th[colspan="7"] {
     color: var(--themeBlue);
@@ -602,16 +605,17 @@ a{
 .calendar-events>.event-header>p {
     font-weight: 400;
 }
+
 /* to centre align bars in toggle button */
 .bars{
     margin-top: -8px;
 }
 
 @media screen and (max-width:570px) {
-.location-info{
-    background-color: var(--textboxBg);
-    border: 1px solid var(--themeBlue);
-    border-radius: 0.5em;
-    padding: 5px;
-}
+    .location-info{
+        background-color: var(--textboxBg);
+        border: 1px solid var(--themeBlue);
+        border-radius: 0.5em;
+        padding: 5px;
+    }
 }
