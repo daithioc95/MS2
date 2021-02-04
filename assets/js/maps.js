@@ -1,5 +1,6 @@
-// Code to initialize map
-// Source: https://developers.google.com/maps/documentation/javascript/maptypes
+// Map initialization
+// Source1: https://developers.google.com/maps/documentation/javascript/maptypes
+// Source2: https://stackoverflow.com/questions/3059044/google-maps-js-api-v3-simple-multiple-marker-example
 
 function initMap() {
     var options = {
