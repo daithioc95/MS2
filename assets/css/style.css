@@ -391,6 +391,19 @@ div#filter{
     padding: 0px;
 }  
 
+/* Design map markers buttons to look like a link */
+/* Source: https://stackoverflow.com/questions/1367409/how-to-make-button-look-like-a-link */
+.map-button{ 
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    padding: 0!important; 
+    font-family: arial, sans-serif;
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /* Mobile container positioning setting */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container {
