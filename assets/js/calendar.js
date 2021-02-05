@@ -113,11 +113,11 @@ $(document).ready(function () {
     $('#calendar').evoCalendar({
         theme: 'Royal Navy',
         calendarEvents: events
-    })
-})
+    });
+});
 
 // Open booking form on event selection
-$('#calendar').on('selectEvent', function (event, activeEvent) {
+$('#calendar').on('selectEvent', function () {
     $('#exampleModalCenter').modal('toggle');
 });
 
@@ -125,7 +125,7 @@ $('#calendar').on('selectEvent', function (event, activeEvent) {
 // Source for media size detection: https://www.tutorialrepublic.com/faq/how-to-detect-a-mobile-device-in-jquery.php
 $(document).ready(function () {
     if (window.matchMedia("(max-width: 425px)").matches) {
-        $('#calendar').on('selectDate', function (event, newDate, oldDate) {
+        $('#calendar').on('selectDate', function () {
             $('#calendar').evoCalendar('toggleEventList', true);
         });
     } else {
