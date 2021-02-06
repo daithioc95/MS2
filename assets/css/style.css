@@ -120,7 +120,6 @@ a#brand, a.nav-link{
     width: 100%;
     height: 100px;
     position: fixed;
-    line-height: 100px;
     text-align: center;
     z-index: 1030;
     padding-bottom: 20px;
@@ -131,6 +130,7 @@ a#brand, a.nav-link{
 @media screen and (min-width:991px) {
     .nav {
         padding-top: 20px;
+        line-height: 100px;
     }
 }
 
