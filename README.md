@@ -121,12 +121,7 @@ The main technologies used are as below.
 - CodePen
   Used for the map feature, which required a lot of trial and error. CodePen was great to instantly see how my changes effected positioning.
 - Bootstrap
-  Used throughout the website to easily implement consistent designs, such as the below
-  - Navbar: https://getbootstrap.com/docs/4.0/components/navbar/
-  - Carousel: https://getbootstrap.com/docs/4.0/components/carousel/
-  - Grid System: https://getbootstrap.com/docs/4.0/layout/grid/
-  - Form in the contact and tours section: https://getbootstrap.com/docs/4.0/components/forms/
-  - Modal in the tours section: https://getbootstrap.com/docs/4.2/components/modal/
+  Used throughout the website to easily implement consistent designs. Bootstrap was used for the Navbar, Carousel, Forms and Mosal items. The Bootstrap Grid System was implemeted throughout. 
 - Epicbootstrap
   - Homepage testimonial section: https://epicbootstrap.com/snippets/testimonials
 - Font Awesome
@@ -147,8 +142,7 @@ The main technologies used are as below.
   - Used for problem solving to implement desired designs.
   - Used to gain better understanding of how I should approach the implementation of elements.
 - W3Schools
-  - Used to gather a theoretical knowledge of elements and effects (in particular the button element)
-    https://www.w3schools.com/w3css/w3css_buttons.asp
+  - Used to gather a theoretical knowledge of elements and effects 
 - W3 HTML Validator
   - Used throughout  the project to ensure I was following best practices with HTML code.
 - Jigsaw CSS Validator
@@ -304,6 +298,12 @@ Please see below for links regarding every image used in the website.
         - https://www.tutorialrepublic.com/faq/how-to-detect-a-mobile-device-in-jquery.php
 - The testimonial section on the bottom of the homepage was achieved by working off the below webpage.
     - https://epicbootstrap.com/snippets/testimonials
+- Bootstrap: Bootstrap was used for the below elements.
+    - Navbar: https://getbootstrap.com/docs/4.0/components/navbar/
+    - Carousel: https://getbootstrap.com/docs/4.0/components/carousel/
+    - Grid System: https://getbootstrap.com/docs/4.0/layout/grid/
+    - Form in the contact and tours section: https://getbootstrap.com/docs/4.0/components/forms/
+    - Modal in the tours section: https://getbootstrap.com/docs/4.2/components/modal/
 - Inspiration to use font awesome icons with hover glow in the footer section was also from the CodeInstitutes "Mini Project".
 - Thanks to the Code Institute Tutors for helping me with problem solving.
 - Thanks to my mentor, Nishant Kumar for guidance throughout the project.
