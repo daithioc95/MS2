@@ -13,7 +13,6 @@ When designing this website, I followed the 5 levels of development, a well know
 ### Strategy Plane
 
 #### Project Objectives
-- Showcase the developer’s frontend development skills.
 - Provide travel information on Ireland to the user.
 - Provide information specific to the company's tours for the visitor
 - Regarding tours, provide the user with the ability to check availability and book a tour.
@@ -29,7 +28,7 @@ When designing this website, I followed the 5 levels of development, a well know
 
 ### Scope Plane
 The scope plane ensures that the website sections align to the objects and that these don’t grow in number throughout the project.
-- Necessary sections which align to the project objectives and user stories mentioned in the Structure plane are as below. 
+- Necessary sections which align to the project objectives and user stories mentioned in the Structure plane. 
 - For this project we will include all phase 1 sections and omit phase 2 sections until a later sprint due to resource capacity. 
 
 #### Phase 1
@@ -43,15 +42,15 @@ The first phase of the website will consist of 5 pages. The map and testimonial 
 - Events
 
 #### Phase 2
-The second phase will be added at a later stage due to time and content capacity. As the company is yet to give any tours, there is a lack of content for the Gallery section.
+The second phase will be added at a later stage due to time and content capacity. As the company is yet to give any tours, there is a lack of content for the Gallery section. There is a rource capacity issue with fullfilling the content for the History section.
 - History
 - Gallery
 
 ### Structure Plane
-- Primary Color: The primary color for the website will be a light blue as the pages welcome images include naturist elements such as the sky, water and clouds and this blue has an aestectica;ly pleasing relationship with the websites images.
+- Primary Color: The primary color for the website will be a light blue as the websites welcome images include naturist elements such as the sky, water and clouds and this blue has an aestecticaly pleasing relationship with the websites images.
 - Navbar: The Navbar will be this primary color to set the theme throughout.
 - Header: This primary colour is used as the header font color throughout.
-- Background: The background will be plane white with a light blue for certain sections to match the navbar and other elements.
+- Background: The background will be white with a light blue for certain sections to match the navbar and other elements.
 - Font Awesome: Font Awesome Icons were used throughout the website to provide more information links.
 
 ### Skeleton Plane
@@ -103,14 +102,14 @@ Please see below list of features present on the website
 - Navbar: A responsive Navbar will feature on the website so the user can easily navigate to other pages.
 - Images: As this is a travel website, this website will be image heavy as a selling point to the visitor for what Ireland has to offer.
 - Carousel: To ensure an engaging website which can portray to the visitor the beauty of Ireland, an image Carousel will be used for aesthetics and to increase the capacity for images.
-- Form: To ensure the visitors can contact the company with any further queries a form will be included.
+- Form: To ensure the visitors can contact the company with any further queries, a form will be included.
 - Interactive Map: A Google Maps API will be used to provide the visitor with information based on location. 
 - Testimonial boxes: Testimonial boxes of previous customer will be included so the visitor can get some further information from previous customers.
 - Calendar Appointment Booking System: If the customer wants to book a tour, they can check availability and book a place using the Calendar Appointment Booking System. 
 
 #### Future Features
-- Logo: The brand logo is currently represented by the site name in the top left-hand corner. I plan to design a more unique logo using Adobe Illustrator in the future.
-- Language: I intend on translating the website to Mandarin Chinese to tailor for the Chinese market. This feature will be an optional change which the user can action using a trigger in the top corner.
+- Logo: The brand logo is currently represented by the site name in the top left-hand corner. I plan to design a more attractive logo using illistrator software at a later stage.
+- Language: I intend on translating the website to Mandarin Chinese as tours are given in Chinese and this is a segment of the company's target market. This feature will be an optional change which the user can action using a trigger in the top corner.
 - Gallery Slideshow: As there is a lack of real world images, when tours can commence there will be an inventory of media to display in a galery section. I plan to implement a slideshow section to portray this.
 
 ## Technologies Used
@@ -122,8 +121,6 @@ The main technologies used are as below.
   Used to add structure and design to my site
 - JavaScript & jQuery
   Used to create and edit interactive features such as maps, calendar, carousel and navbar 
-- CodePen
-  Used for the map feature, which required a lot of trial and error. CodePen was great to instantly see how my changes effected positioning.
 - Bootstrap
   Used throughout the website to easily implement consistent designs. Bootstrap was used for the Navbar, Carousel, Forms and Mosal items. The Bootstrap Grid System was implemeted throughout. 
 - Epicbootstrap
@@ -137,7 +134,7 @@ The main technologies used are as below.
 - Google Fonts
   - Used for font implementation and inspiration.
 - GitPod
-  - Used to create, commit and push the HTML and CSS changes for the website.
+  - Used to create, commit and push the HTML, CSS and JavaScript changes for the website.
 - GitHub
   - Used to deploy the website and store files and code.
 - ColorPick Eyedropper
@@ -152,7 +149,7 @@ The main technologies used are as below.
 - Jigsaw CSS Validator
   - Used throughout  the project to ensure I was following best practices with CSS code.
 - JSHint JavaScript Validator
-  - Used throughout  the project to ensure I was following best practices with JavaScript code.
+  - Used this GitPod extenstion throughout the project to ensure I was following best practices with JavaScript code.
 
 ## Testing
 ### Testing User Stories
@@ -184,7 +181,7 @@ The main technologies used are as below.
 <img src="assets/images/user_story_testing/tours_calendar_available.PNG">
 
 #### As a potential customer, I want to book a tour, so that I can guarantee my place on the tour.
-- User can book a place and guarantee their place on a tour by navigating to the calendar and the bottom of the tours page.
+- Users can book a place and guarantee their place on a tour by navigating to the calendar and the bottom of the tours page.
 - When the desired date with availability is selected, they can choose between the "Morning Tour 9.00" or the "Noon Tour 12.00".
 <img src="assets/images/user_story_testing/tours_calendar_available.PNG">
 
@@ -198,7 +195,7 @@ The main technologies used are as below.
 - The user can contact the company for any further information by navigating the contact page.
 <img src="assets/images/user_story_testing/contact.PNG">
 
-- The user can then scroll down to the "Want to contact us?" form where they can enter their name, emails and query which will be routed to the company.
+- The user can then scroll down to the "Want to contact us?" form where they can enter their name, email address and query which will be routed to the company.
 <img src="assets/images/user_story_testing/contact_info.PNG">
 
 ### Browsers
@@ -261,7 +258,7 @@ If you wish to clone this project, action the following instructions.
 ## Known Bugs and Fixes
 - Evo-Calendar
     - For mobile devices, when closing the events section on there appears to be an issue with closing. It is expected to gradually slide in, however it slides a fraction before closing abruptly. This is a known issue and I plan to fix this at a later stage.
-    - Occasionally the event section closes involuntarily when scrolling on mobile devices. 
+    - Occasionally the event section closes involuntarily when scrolling on mobile devices which I intend to investigate at a later stage.
 
 - JSHint issue
     - The below issue  appears when using the JShint validator despite the code fullfilling it's functionality.
@@ -304,7 +301,7 @@ Please see below for links regarding every image used in the website.
     - The JavaScript was acquired by using the Google maps tutorials and the YouTube video as per links below.
         - https://developers.google.com/maps/documentation/javascript/
         - https://www.youtube.com/watch?v=Zxf1mnP5zcw
-    - The below Stackoverflow post was a great help in implementing the checkbox which interacted with the homepage google map to drop markers.
+    - The below Stackoverflow post was great help in implementing the checkbox which interacted with the homepage google map to drop markers.
         - https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
     - The smoothzoom function was implemented which allowed for a long distant zoom to pin. The solution was achieved thanks to the below Stackoverflow post.
         - https://stackoverflow.com/questions/4752340/how-to-zoom-in-smoothly-on-a-marker-in-google-maps
@@ -331,6 +328,6 @@ Please see below for links regarding every image used in the website.
 - The form submit button message prompt was completed using JavaScript written by Mark Railton. 
 - Thanks to the Code Institute Slack channel for providing me with a wealth of information on every aspect of the project.
 - The Elements of User Experience by Jesse James Garrett's book helped during the design process as mentioned in the UX section of the ReadMe
-- Used elements of my Milestone Project One ReadMe to approach the design process in a similar manner. https://github.com/daithioc95/MS1
+- Used elements of my Milestone Project One ReadMe to follow similar ReadMe content structure and to approach the design process in a similar manner. https://github.com/daithioc95/MS1
 
 
