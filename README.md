@@ -1,6 +1,6 @@
 # Interactive Front-End Development Project
 <img src="assets/wireframes/ms2_responsive_image.JPG">
-This website is a travel website for anyone interested in visiting or learning more about the island of Ireland. In addition to providing an informative service, this website will also provide the user with the ability to book tours within Ireland. The website contains frontend development features to provide information in an interactive and aesthetically pleasing manner. 
+This website is a travel website for anyone interested in visiting or learning more about the island of Ireland. In addition to providing an informative service, this website will also provide the user with the ability to book tours with the company in Ireland. The website contains frontend development features to provide information in an interactive and aesthetically pleasing manner. 
 
 ## UX
 When designing this website, I followed the 5 levels of development, a well know web design process mentioned in Jesse James Garrett's book, The Elements of User Experience. The planning of each of these planes are to follow the same order as below with each plane aligning to the previous plane’s requirements. This ensures that the main objectives for the website identified in the Strategy plane aligns all the way through to the Surface Plane which identifies the actual features on the website.
@@ -14,7 +14,7 @@ When designing this website, I followed the 5 levels of development, a well know
 
 #### Project Objectives
 - Provide travel information on Ireland to the user.
-- Provide information specific to the company's tours for the visitor
+- Provide information specific to the company's tours for the visitor.
 - Regarding tours, provide the user with the ability to check availability and book a tour.
 - Allow the user to interact with the website to collect information in an aesthetically pleasing manner.
 - Provide a means of contact for the visitor should they want to reach out to the company directly.
@@ -42,12 +42,12 @@ The first phase of the website will consist of 5 pages. The map and testimonial 
 - Events
 
 #### Phase 2
-The second phase will be added at a later stage due to time and content capacity. As the company is yet to give any tours, there is a lack of content for the Gallery section. There is a rource capacity issue with fullfilling the content for the History section.
+The second phase will be added at a later stage due to time and content capacity. As the company is yet to give any tours, there is a lack of content for the Gallery section. There is a resource capacity issue with fulfilling the content for the History section.
 - History
 - Gallery
 
 ### Structure Plane
-- Primary Color: The primary color for the website will be a light blue as the websites welcome images include naturist elements such as the sky, water and clouds and this blue has an aestecticaly pleasing relationship with the websites images.
+- Primary Color: The primary color for the website will be a light blue as the webpages welcoming images include naturist elements such as the sky, water and clouds and this blue has an aesthetically pleasing relationship with the website's images.
 - Navbar: The Navbar will be this primary color to set the theme throughout.
 - Header: This primary colour is used as the header font color throughout.
 - Background: The background will be white with a light blue for certain sections to match the navbar and other elements.
@@ -103,26 +103,26 @@ Please see below list of features present on the website
 - Images: As this is a travel website, this website will be image heavy as a selling point to the visitor for what Ireland has to offer.
 - Carousel: To ensure an engaging website which can portray to the visitor the beauty of Ireland, an image Carousel will be used for aesthetics and to increase the capacity for images.
 - Form: To ensure the visitors can contact the company with any further queries, a form will be included.
-- Interactive Map: A Google Maps API will be used to provide the visitor with information based on location. 
-- Testimonial boxes: Testimonial boxes of previous customer will be included so the visitor can get some further information from previous customers.
+- Interactive Maps: A Google Maps API will be used to provide the visitor with information based on location. A more simple map will also be included on the tours page to outline the trail of the tour.
+- Testimonial boxes: Testimonial boxes of previous customers will be included so the visitor can get some further information of what to expect.
 - Calendar Appointment Booking System: If the customer wants to book a tour, they can check availability and book a place using the Calendar Appointment Booking System. 
 
 #### Future Features
-- Logo: The brand logo is currently represented by the site name in the top left-hand corner. I plan to design a more attractive logo using illistrator software at a later stage.
+- Logo: The brand logo is currently represented by the site name in the top left-hand corner. I plan to design a more attractive logo using illustrator software at a later stage.
 - Language: I intend on translating the website to Mandarin Chinese as tours are given in Chinese and this is a segment of the company's target market. This feature will be an optional change which the user can action using a trigger in the top corner.
-- Gallery Slideshow: As there is a lack of real world images, when tours can commence there will be an inventory of media to display in a galery section. I plan to implement a slideshow section to portray this.
+- Gallery Slideshow: As there is a lack of real-world images, when tours can commence there will be an inventory of media to display in a gallery section. I plan to implement a slideshow section to portray this.
 
 ## Technologies Used
 The main technologies used are as below.
 
 - HTML
-  Used to add content to the website
+  Used to add content to the website.
 - CSS
-  Used to add structure and design to my site
+  Used to add structure and design to my site.
 - JavaScript & jQuery
-  Used to create and edit interactive features such as maps, calendar, carousel and navbar 
+  Used to create and edit interactive features such as maps, calendar, carousel and navbar.
 - Bootstrap
-  Used throughout the website to easily implement consistent designs. Bootstrap was used for the Navbar, Carousel, Forms and Mosal items. The Bootstrap Grid System was implemeted throughout. 
+  Used throughout the website to easily implement attractive and consistent designs. Bootstrap was used for the Navbar, Carousel, Forms and Mosal items. The Bootstrap Grid System was implemented throughout. 
 - Epicbootstrap
   - Used to implement the homepage testimonial section.
 - Font Awesome
@@ -143,13 +143,13 @@ The main technologies used are as below.
   - Used for problem solving to implement desired designs.
   - Used to gain better understanding of how I should approach the implementation of elements.
 - W3Schools
-  - Used to gather a theoretical knowledge of elements and effects 
+  - Used to gather a theoretical knowledge of elements and effects.
 - W3 HTML Validator
   - Used throughout  the project to ensure I was following best practices with HTML code.
 - Jigsaw CSS Validator
   - Used throughout  the project to ensure I was following best practices with CSS code.
 - JSHint JavaScript Validator
-  - Used this GitPod extenstion throughout the project to ensure I was following best practices with JavaScript code.
+  - Used this GitPod extension throughout the project to ensure I was following best practices with JavaScript code.
 
 ## Testing
 ### Testing User Stories
@@ -232,18 +232,18 @@ Tested and working consistently on the below browsers for desktop.
   - Jigsaw CSS Validator: https://validator.w3.org/
     - <a href="assets/images/user_story_testing/w3validator_css.PNG" target="_blank">style.css Validator success</a>
 
-- The project passed the below validation test, besides one reoccuring issue which is discussed in more detail in the Known Bugs and Fixes Section of this README.
+- The project passed the below validation test, besides one recurring issue which is discussed in more detail in the Known Bugs and Fixes Section of this README.
  - JSHint JavaScript Validator: https://jshint.com/
     - <a href="assets/images/user_story_testing/jshintvalidator_js.PNG" target="_blank">.js files Validator results</a>
 
 ## Deployment
 This project was created using GitPod for commit and push actions.
-This project was deployed using GitHub pages at https://daithioc95.github.io/MS2 as below
+This project was deployed using GitHub pages at https://daithioc95.github.io/MS2 as below.
 
 ### Deploying the project
 1. In the GitHub repository, navigate to the settings tab.
 2. Locate the GitHub Pages section.
-3. Change source to master and select "Save"
+3. Change source to master and select "Save".
 4. To confirm, scroll down to the same section on the refreshed page and the "Your site is published at https://daithioc95.github.io/MS2/" will appear.
 
 ### Cloning the project
@@ -257,14 +257,14 @@ If you wish to clone this project, action the following instructions.
 
 ## Known Bugs and Fixes
 - Evo-Calendar
-    - For mobile devices, when closing the events section on there appears to be an issue with closing. It is expected to gradually slide in, however it slides a fraction before closing abruptly. This is a known issue and I plan to fix this at a later stage.
-    - Occasionally the event section closes involuntarily when scrolling on mobile devices which I intend to investigate at a later stage.
+    - For mobile devices, when closing the events section on there appears to be an issue with closing. It is expected to gradually slide shut however it slides a fraction before closing abruptly. This is a known issue and I plan to fix this at a later stage.
+    - Occasionally the event section closes involuntarily when scrolling on mobile devices which can be frustrating for the user when selecting the desired event, I intend to investigate this issue deeper at a later stage.
 
 - JSHint issue
-    - The below issue  appears when using the JShint validator despite the code fullfilling it's functionality.
+    - The below issue  appears when using the JSHint validator despite the code fulfilling its functionality.
     - "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (W083)"
-    - The reason for this error is because a function is declared within the for loop. I have trialed a series of different approaches to remove this error, however it still appears. The function is needed to appear within the loop in order to implement the location title above the specified marker.
-    - This may be down to how the google maps API elements interacts with Jshint.
+    - The reason for this error is because a function is declared within the for loop. I have trialled a series of different approaches to remove this error, however it still appears. The function is needed to appear within the loop in order to implement the location title above the specified marker.
+    - This may be down to how the google maps API elements interacts with JSHint.
     - The error occurs for each category of map markers meaning it occurs once in the maps2.js file and 3 times in the maps.js file.
 
 ## Credits
@@ -323,11 +323,11 @@ Please see below for links regarding every image used in the website.
     - Modal in the tours section: https://getbootstrap.com/docs/4.2/components/modal/
 - Inspiration to use font awesome icons with hover glow in the footer section was also from the CodeInstitutes "Mini Project".
 - Thanks to the Code Institute Tutors for helping me with problem solving.
-    - In particular with regards to the the JShint function issue.
+    - In particular with regards to the JSHint function issue.
 - Thanks to my mentor, Nishant Kumar for guidance throughout the project.
 - The form submit button message prompt was completed using JavaScript written by Mark Railton. 
 - Thanks to the Code Institute Slack channel for providing me with a wealth of information on every aspect of the project.
-- The Elements of User Experience by Jesse James Garrett's book helped during the design process as mentioned in the UX section of the ReadMe
+- The Elements of User Experience by Jesse James Garrett's book helped during the design process as mentioned in the UX section of the ReadMe.
 - Used elements of my Milestone Project One ReadMe to follow similar ReadMe content structure and to approach the design process in a similar manner. https://github.com/daithioc95/MS1
 
 
