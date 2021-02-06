@@ -14,10 +14,10 @@ When designing this website, I followed the 5 levels of development, a well know
 
 #### Project Objectives
 - Showcase the developer’s frontend development skills.
-- Provide travel information on Ireland to the audience.
+- Provide travel information on Ireland to the user.
 - Provide information specific to the company's tours for the visitor
-- Regarding tours, provide the audience with the ability to check availability and book a tour.
-- Allow the audience to interact with the website to collect information in an aesthetically pleasing manner.
+- Regarding tours, provide the user with the ability to check availability and book a tour.
+- Allow the user to interact with the website to collect information in an aesthetically pleasing manner.
 - Provide a means of contact for the visitor should they want to reach out to the company directly.
 
 #### User Stories
@@ -48,13 +48,14 @@ The second phase will be added at a later stage due to time and content capacity
 - Gallery
 
 ### Structure Plane
-- Navbar: The Navbar is a green colour to ensure the green brand image of Ireland is communicated to the visitor.
-- Header: The Navbar colour is used as the header font color throughout.
-- Background: The background will consist of background images with a level of transparency applied.
+- Primary Color: The primary color for the website will be a light blue as the pages welcome images include naturist elements such as the sky, water and clouds and this blue has an aestectica;ly pleasing relationship with the websites images.
+- Navbar: The Navbar will be this primary color to set the theme throughout.
+- Header: This primary colour is used as the header font color throughout.
+- Background: The background will be plane white with a light blue for certain sections to match the navbar and other elements.
 - Font Awesome: Font Awesome Icons were used throughout the website to provide more information links.
 
 ### Skeleton Plane
-Once the sections and layout has been identified as in the previous planes we can get started with the Skeleton Plane.
+Once the sections and layout has been identified as in the previous planes, we can get started with the Skeleton Plane.
 The Skeleton Planes outlines the arrangement of each section on the website and the best way to design these are by creating wireframes.
 I initially drew these wireframes before creating using Balsamiq software.
 
@@ -108,6 +109,9 @@ Please see below list of features present on the website
 - Calendar Appointment Booking System: If the customer wants to book a tour, they can check availability and book a place using the Calendar Appointment Booking System. 
 
 #### Future Features
+- Logo: The brand logo is currently represented by the site name in the top left-hand corner. I plan to design a more unique logo using Adobe Illustrator in the future.
+- Language: I intend on translating the website to Mandarin Chinese to tailor for the Chinese market. This feature will be an optional change which the user can action using a trigger in the top corner.
+- Gallery Slideshow: As there is a lack of real world images, when tours can commence there will be an inventory of media to display in a galery section. I plan to implement a slideshow section to portray this.
 
 ## Technologies Used
 The main technologies used are as below.
@@ -123,7 +127,7 @@ The main technologies used are as below.
 - Bootstrap
   Used throughout the website to easily implement consistent designs. Bootstrap was used for the Navbar, Carousel, Forms and Mosal items. The Bootstrap Grid System was implemeted throughout. 
 - Epicbootstrap
-  - Homepage testimonial section: https://epicbootstrap.com/snippets/testimonials
+  - Used to implement the homepage testimonial section.
 - Font Awesome
   - Font Awesome was used to input icons throughout the project. I used 4 different icons throughout the project.
 - Balsamiq
@@ -156,8 +160,8 @@ The main technologies used are as below.
 - The home page map section provides information on Ireland based on type of destination, Tourist Attractions, Restaurants/Bars or Events. 
 <img src="assets/images/user_story_testing/home_page_map.PNG">
 
--Upon selection of the pin location information is provided relating to that destination. Information will appear so that the user can decide if Ireland is a suitable destination based on their interests in these locations.
-- Should the user require more information, they can select the link below in the information which will lead them to an external page where they can find more information.
+- Upon selection of the pin location, information is provided relating to that destination. Information will appear so that the user can decide if Ireland is a suitable destination based on their interests in these locations.
+- Should the user require more information, they can select the link below the information paragraph which will lead them to an external page where they can find more information.
 <img src="assets/images/user_story_testing/home_page_map_selection.PNG">
 
 - The Events section provides information on events which occur in Ireland throughout the year.
@@ -166,7 +170,7 @@ The main technologies used are as below.
 
 #### As a potential customer, I want to find information on the company’s tours, so that I can decide if the tours are suitable to me.
 - The user can find information relating to the tours by navigating to the 'tours' page.
-- The user is provided with information such as frequency, duration, starting point and trial of the tour.
+- The user is provided with information such as frequency, duration, starting point and trail of the tour.
 - Below this information, there is also a map including markers relating to each location on the tour so the user can get a visual overview of the tour.
 <img src="assets/images/user_story_testing/tours.PNG">
 
@@ -186,12 +190,14 @@ The main technologies used are as below.
 
 - When the desired event is selected a form pop up will appear where the user can input relevant information.
 <img src="assets/images/user_story_testing/tours_calendar_form.PNG">
-- The user can enter their name, email and phone number along with optional additional information before selecting the Submit button which will guarantee their place.
+
+- The user can then enter their name, email and phone number along with optional additional information before selecting the Submit button which will guarantee their place.
 <img src="assets/images/user_story_testing/tours_calendar_form_info.PNG">
 
 #### As a potential customer, I want to contact the company, so that I can provide feedback or ask any unanswered questions.
 - The user can contact the company for any further information by navigating the contact page.
 <img src="assets/images/user_story_testing/contact.PNG">
+
 - The user can then scroll down to the "Want to contact us?" form where they can enter their name, emails and query which will be routed to the company.
 <img src="assets/images/user_story_testing/contact_info.PNG">
 
@@ -217,7 +223,7 @@ Tested and working consistently on the below browsers for desktop.
   - Surface Duo
   - Galaxy Fold
 
-- The project passed the below validation tests.
+- The project passed the below validation tests. Please see below links to view validation screenshot.
   - W3 HTML Validator: https://validator.w3.org/
     - <a href="assets/images/user_story_testing/w3validator_html_index.PNG" target="_blank">index.html Validator success</a>
     - <a href="assets/images/user_story_testing/w3validator_html_about.PNG" target="_blank">about.html Validator success</a>
@@ -231,7 +237,7 @@ Tested and working consistently on the below browsers for desktop.
 
 - The project passed the below validation test, besides one reoccuring issue which is discussed in more detail in the Known Bugs and Fixes Section of this README.
  - JSHint JavaScript Validator: https://jshint.com/
-    - <a href="assets/images/user_story_testing/jshintvalidator_js.PNG" target="_blank">style.css Validator results</a>
+    - <a href="assets/images/user_story_testing/jshintvalidator_js.PNG" target="_blank">.js files Validator results</a>
 
 ## Deployment
 This project was created using GitPod for commit and push actions.
@@ -254,14 +260,14 @@ If you wish to clone this project, action the following instructions.
 
 ## Known Bugs and Fixes
 - Evo-Calendar
- - For mobile devices, when closing the events section on there appears to be an issue with closing. It is expected to gradually slide in however, it slides a fraction before closing abruptly. This is a known issue and I plan to fix this at a later stage.
+    - For mobile devices, when closing the events section on there appears to be an issue with closing. It is expected to gradually slide in, however it slides a fraction before closing abruptly. This is a known issue and I plan to fix this at a later stage.
 
 - JSHint issue
- - The below issue  appears when using the JShint validator despite the code fullfilling it's functionality.
- - "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (W083)"
- - The reason for this error is because a function is declared within the for loop. I have trialed a series of different approaches to remove this error, however it still appears. The function is needed to appear within the loop in order to implement the location title above the specified marker.
- - This may be down to how the google maps API elements interacts with Jshint.
- - The error occurs for each set of markers meaning it occurs once in the maps2.js file and 3 times in the maps.js file.
+    - The below issue  appears when using the JShint validator despite the code fullfilling it's functionality.
+    - "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (W083)"
+    - The reason for this error is because a function is declared within the for loop. I have trialed a series of different approaches to remove this error, however it still appears. The function is needed to appear within the loop in order to implement the location title above the specified marker.
+    - This may be down to how the google maps API elements interacts with Jshint.
+    - The error occurs for each category of map markers meaning it occurs once in the maps2.js file and 3 times in the maps.js file.
 
 ## Credits
 ### Content
@@ -297,9 +303,9 @@ Please see below for links regarding every image used in the website.
     - The JavaScript was acquired by using the Google maps tutorials and the YouTube video as per links below.
         - https://developers.google.com/maps/documentation/javascript/
         - https://www.youtube.com/watch?v=Zxf1mnP5zcw
-    - The checkbox drop pin code was help with thanks to the below Stackoverflow page
+    - The below Stackoverflow post was a great help in implementing the checkbox which interacted with the homepage google map to drop markers.
         - https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
-    - The smoothzoom function was implemented which allowed for a long distant zoom to pin. The solution was achieved thanks to the below Stackoverflow page.
+    - The smoothzoom function was implemented which allowed for a long distant zoom to pin. The solution was achieved thanks to the below Stackoverflow post.
         - https://stackoverflow.com/questions/4752340/how-to-zoom-in-smoothly-on-a-marker-in-google-maps
     - Removing map pins was achieved thanks to the below post.
         - https://intellipaat.com/community/26710/google-maps-api-v3-how-to-remove-all-markers
@@ -309,7 +315,7 @@ Please see below for links regarding every image used in the website.
         - https://www.foxinfotech.in/2020/03/javascript-increment-date-by-1-day-examples.html
     - To open the event lister for mobile device, I achieved this using code from the below webpage.
         - https://www.tutorialrepublic.com/faq/how-to-detect-a-mobile-device-in-jquery.php
-- The testimonial section on the bottom of the homepage was achieved by working off the below webpage.
+- The testimonial section on the bottom of the homepage was achieved by utilizing code from the below webpage.
     - https://epicbootstrap.com/snippets/testimonials
 - Bootstrap: Bootstrap was used for the below elements.
     - Navbar: https://getbootstrap.com/docs/4.0/components/navbar/
@@ -319,6 +325,7 @@ Please see below for links regarding every image used in the website.
     - Modal in the tours section: https://getbootstrap.com/docs/4.2/components/modal/
 - Inspiration to use font awesome icons with hover glow in the footer section was also from the CodeInstitutes "Mini Project".
 - Thanks to the Code Institute Tutors for helping me with problem solving.
+    - In particular with regards to the the JShint function issue.
 - Thanks to my mentor, Nishant Kumar for guidance throughout the project.
 - The form submit button message prompt was completed using JavaScript written by Mark Railton. 
 - Thanks to the Code Institute Slack channel for providing me with a wealth of information on every aspect of the project.
