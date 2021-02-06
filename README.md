@@ -225,7 +225,7 @@ Tested and working consistently on the below browsers for desktop.
     - <a href="assets/images/user_story_testing/w3validator_html_index.PNG" target="_blank">index.html Validator success</a>
     - <a href="assets/images/user_story_testing/w3validator_html_about.PNG" target="_blank">about.html Validator success</a>
     - <a href="assets/images/user_story_testing/w3validator_html_events.PNG" target="_blank">events.html Validator success</a>
-    - <a href="assets/images/user_story_testing/w3validator_tours_tours.PNG" target="_blank">tours.html Validator success</a>
+    - <a href="assets/images/user_story_testing/w3validator_html_tours.PNG" target="_blank">tours.html Validator success</a>
     - <a href="assets/images/user_story_testing/w3validator_html_contact.PNG" target="_blank">contact.html Validator success</a>
 
 
