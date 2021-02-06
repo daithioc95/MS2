@@ -9,7 +9,7 @@ function initMap() {
             lat: 53.2734,
             lng: -7.77832031
         } //Coordinates of Ireland
-    }
+    };
     // implementing markers
     var map = new google.maps.Map(document.getElementById('map'), options);
     var attractionMarkers = [];
