@@ -223,10 +223,16 @@ Tested and working consistently on the below browsers for desktop.
 
 - The project passed the below validation tests.
   - W3 HTML Validator: https://validator.w3.org/
-    
-    - <a href="" target="_blank">HTML Validator success</a>
+    - <a href="assets/images/user_story_testing/w3validator_html_index.PNG" target="_blank">index.html Validator success</a>
+    - <a href="assets/images/user_story_testing/w3validator_html_about.PNG" target="_blank">about.html Validator success</a>
+    - <a href="assets/images/user_story_testing/w3validator_html_events.PNG" target="_blank">events.html Validator success</a>
+    - <a href="assets/images/user_story_testing/w3validator_tours_tours.PNG" target="_blank">tours.html Validator success</a>
+    - <a href="assets/images/user_story_testing/w3validator_html_contact.PNG" target="_blank">contact.html Validator success</a>
+
+
   - Jigsaw CSS Validator: https://validator.w3.org/
-    - <a href="" target="_blank">CSS Validator success</a>
+    - <a href="assets/images/user_story_testing/w3validator_css.PNG" target="_blank">style.css Validator success</a>
+
 ## Deployment
 This project was created using GitPod for commit and push actions.
 This project was deployed using GitHub pages at https://daithioc95.github.io/MS2 as below

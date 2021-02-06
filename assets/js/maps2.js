@@ -1,6 +1,7 @@
 // Map initialization
 // Source1: https://developers.google.com/maps/documentation/javascript/maptypes
 // Source2: https://stackoverflow.com/questions/3059044/google-maps-js-api-v3-simple-multiple-marker-example
+/* jshint esversion: 8, jquery: true */
 
 function initMap() {
     // Array of locations information
@@ -24,8 +25,8 @@ function initMap() {
 
     // implementing markers variables
     var infowindow = new google.maps.InfoWindow();
-    var marker, i;
-    for (i = 0; i < locations.length; i++) {
+    var marker;
+    for (let i = 0; i < locations.length; i++) {
         marker = new google.maps.Marker({
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
             map: map2
@@ -35,7 +36,7 @@ function initMap() {
             return function () {
                 infowindow.setContent(locations[i][0]);
                 infowindow.open(map2, marker);
-            }
+            };
         })(marker, i));
     }
 }
