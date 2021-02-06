@@ -309,5 +309,7 @@ Please see below for links regarding every image used in the website.
 - Thanks to my mentor, Nishant Kumar for guidance throughout the project.
 - The form submit button message prompt was completed using JavaScript written by Mark Railton. 
 - Thanks to the Code Institute Slack channel for providing me with a wealth of information on every aspect of the project.
+- The Elements of User Experience by Jesse James Garrett's book helped during the design process as mentioned in the UX section of the ReadMe
+- Used elements of my Milestone Project One ReadMe to approach the design process in a similar manner. https://github.com/daithioc95/MS1
 
 

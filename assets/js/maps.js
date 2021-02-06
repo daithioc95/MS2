@@ -74,7 +74,7 @@ function initMap() {
     ];
 
     // initializing variables to drop markers
-    var marker, i;
+    var marker;
     var infowindow = new google.maps.InfoWindow();
     const attractionIcon = "http://maps.google.com/mapfiles/ms/icons/green.png";
     const restaurantIcon = "http://maps.google.com/mapfiles/ms/icons/grey.png";
@@ -107,7 +107,7 @@ function initMap() {
     // Source: https://intellipaat.com/community/26710/google-maps-api-v3-how-to-remove-all-markers
 
     function removeAttractions() {
-        for (i = 0; i < attractionMarkers.length; i++) {
+        for (let i = 0; i < attractionMarkers.length; i++) {
             attractionMarkers[i].setMap(null);
         }
         attractionMarkers.length = 0;
@@ -137,7 +137,7 @@ function initMap() {
 
     // Function to remove restaurant markers
     function removeRestaurants() {
-        for (i = 0; i < restaurantsMarkers.length; i++) {
+        for (let i = 0; i < restaurantsMarkers.length; i++) {
             restaurantsMarkers[i].setMap(null);
         }
         restaurantsMarkers.length = 0;
@@ -167,7 +167,7 @@ function initMap() {
 
     // Function to remove event markers
     function removeEvents() {
-        for (i = 0; i < eventsMarkers.length; i++) {
+        for (let i = 0; i < eventsMarkers.length; i++) {
             eventsMarkers[i].setMap(null);
         }
         eventsMarkers.length = 0;
