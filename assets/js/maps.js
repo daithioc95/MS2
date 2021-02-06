@@ -91,7 +91,7 @@ function initMap() {
                 title: attractions[i][2],
                 animation: google.maps.Animation.DROP,
                 icon: attractionIcon,
-            })
+            });
             attractionMarkers.push(marker);
             google.maps.event.addListener(marker, 'click', (function (marker, i) {
                 return function () {
@@ -99,7 +99,7 @@ function initMap() {
                     map.setCenter(marker.getPosition());
                     infowindow.setContent(attractions[i][2]);
                     infowindow.open(map, marker);
-                }
+                };
             })(marker, i));
         }
     }
@@ -130,7 +130,7 @@ function initMap() {
                     map.setCenter(marker.getPosition());
                     infowindow.setContent(restaurants[i][2]);
                     infowindow.open(map, marker);
-                }
+                };
             })(marker, i));
         }
     }
@@ -160,7 +160,7 @@ function initMap() {
                     smoothZoom(map, 12, map.getZoom());
                     infowindow.setContent(events[i][2]);
                     infowindow.open(map, marker);
-                }
+                };
             })(marker, i));
         }
     }
@@ -180,11 +180,11 @@ function initMap() {
             return;
         }
         else {
-            z = google.maps.event.addListener(map, 'zoom_changed', function (event) {
+            z = google.maps.event.addListener(map, 'zoom_changed', function () {
                 google.maps.event.removeListener(z);
                 smoothZoom(map, max, cnt + 1);
             });
-            setTimeout(function () { map.setZoom(cnt) }, 80);
+            setTimeout(function () { map.setZoom(cnt); }, 80);
         }
     }
 }
