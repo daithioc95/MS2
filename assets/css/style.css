@@ -123,10 +123,15 @@ a#brand, a.nav-link{
     line-height: 100px;
     text-align: center;
     z-index: 1030;
-    padding-top: 20px;
     padding-bottom: 20px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+}
+
+@media screen and (min-width:991px) {
+    .nav {
+        padding-top: 20px;
+    }
 }
 
 a#brand:hover{

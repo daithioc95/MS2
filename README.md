@@ -261,6 +261,7 @@ If you wish to clone this project, action the following instructions.
 ## Known Bugs and Fixes
 - Evo-Calendar
     - For mobile devices, when closing the events section on there appears to be an issue with closing. It is expected to gradually slide in, however it slides a fraction before closing abruptly. This is a known issue and I plan to fix this at a later stage.
+    - Occasionally the event section closes involuntarily when scrolling on mobile devices. 
 
 - JSHint issue
     - The below issue  appears when using the JShint validator despite the code fullfilling it's functionality.
