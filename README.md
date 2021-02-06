@@ -147,6 +147,8 @@ The main technologies used are as below.
   - Used throughout  the project to ensure I was following best practices with HTML code.
 - Jigsaw CSS Validator
   - Used throughout  the project to ensure I was following best practices with CSS code.
+- JSHint JavaScript Validator
+  - Used throughout  the project to ensure I was following best practices with JavaScript code.
 
 ## Testing
 ### Testing User Stories
@@ -227,6 +229,10 @@ Tested and working consistently on the below browsers for desktop.
   - Jigsaw CSS Validator: https://validator.w3.org/
     - <a href="assets/images/user_story_testing/w3validator_css.PNG" target="_blank">style.css Validator success</a>
 
+- The project passed the below validation test, besides one reoccuring issue which is discussed in more detail in the Known Bugs and Fixes Section of this README.
+ - JSHint JavaScript Validator: https://jshint.com/
+    - <a href="assets/images/user_story_testing/jshintvalidator_js.PNG" target="_blank">style.css Validator results</a>
+
 ## Deployment
 This project was created using GitPod for commit and push actions.
 This project was deployed using GitHub pages at https://daithioc95.github.io/MS2 as below
@@ -249,6 +255,13 @@ If you wish to clone this project, action the following instructions.
 ## Known Bugs and Fixes
 - Evo-Calendar
  - For mobile devices, when closing the events section on there appears to be an issue with closing. It is expected to gradually slide in however, it slides a fraction before closing abruptly. This is a known issue and I plan to fix this at a later stage.
+
+- JSHint issue
+ - The below issue  appears when using the JShint validator despite the code fullfilling it's functionality.
+ - "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (W083)"
+ - The reason for this error is because a function is declared within the for loop. I have trialed a series of different approaches to remove this error, however it still appears. The function is needed to appear within the loop in order to implement the location title above the specified marker.
+ - This may be down to how the google maps API elements interacts with Jshint.
+ - The error occurs for each set of markers meaning it occurs once in the maps2.js file and 3 times in the maps.js file.
 
 ## Credits
 ### Content
